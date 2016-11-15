@@ -1,0 +1,21 @@
+h1 {
+  text-transform: uppercase;
+}
+
+.ul-sections {
+  text-transform: uppercase;
+}
+
+.panel.panel-news-unit.panel-news-unit-small {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(/images/filler-640x480-1.jpg);
+  background-size: cover;
+}
+
+.panel.panel-news-unit.panel-news-unit-small h2 {
+  color: white;
+}

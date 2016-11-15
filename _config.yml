@@ -1,0 +1,13 @@
+# Site data
+
+title: UPSITF
+
+baseurl: http://toffmendoza.me/sandbox-upsitf
+#baseurl: http://upsitf.org/
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Site settings
+headerDropdown: false
