@@ -5,7 +5,9 @@ layout: main
 <section><div>
 
   <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
-    <h1>Tech Course Programs</h1>
+    <span class="span-category">Technical Course Programs <span>Short Courses</span></span>
+    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
+    <span class="span-title">CCNA Modules 1 to 4</span>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
       nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
       volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -16,6 +18,7 @@ layout: main
 
 <section>
 
+  {% if site.switchBlog == true %}
   <section class="section-home section-home-news">
 
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -24,9 +27,10 @@ layout: main
 
         <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-news-unit panel-news-unit-large"><div class="row">
           <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0">
-            <div class="panel panel-nomargins panel-news-unit-large-content panel-news-unit-large-content-image"><img></div>
+            <div class="panel panel-nomargins panel-news-unit-large-content panel-news-unit-large-content-image"><!--img src="{{ site.baseurl }}/images/filler-640x480-1.jpg"--></div>
           </div>
-          <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0"><div class="panel panel-nomargins panel-news-unit-large-content panel-news-unit-large-content-text">
+          <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0"><div class="panel panel-news-unit-large-content panel-news-unit-large-content-text">
+            <h1>What's New</h1>
             <h2>100 Days of Y4iT</h2>
             <span>January 1, 2016</span>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -56,6 +60,7 @@ layout: main
     </div></div></div>
 
   </section>
+  {% endif %}
 
   <section class="section-home section-home-shortcourses">
 
@@ -94,7 +99,7 @@ layout: main
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h1>Other Services</h1>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a><div class="panel panel-service">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="{{ site.baseurl }}/services"><div class="panel panel-service">
         <h2>
           CCT
           <small>Corporate Customized Training</small>
@@ -102,7 +107,7 @@ layout: main
         <p>UPSITF can also customize its training modules according to the needs
           of its clients and partners.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a><div class="panel panel-service">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="{{ site.baseurl }}/services"><div class="panel panel-service">
         <h2>
           TBC4K
           <small>Tech Boot Camp for Kids + Teens</small>
@@ -111,7 +116,7 @@ layout: main
           especially designed for kids and teens, including Robotics, Digital
           Arts, and more.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a><div class="panel panel-service">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="{{ site.baseurl }}/services"><div class="panel panel-service">
         <h2>
           ICT4D
           <small>ICT for Development</small>
@@ -120,7 +125,7 @@ layout: main
           aims to engage government, IT industry, and developmental institutions
           in contributing to sustainable inclusive growth of the country.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a><div class="panel panel-service">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="{{ site.baseurl }}/services"><div class="panel panel-service">
         <h2>
           +
           <small></small>
@@ -183,7 +188,7 @@ layout: main
 
   <section class="section-home section-home-about">
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"><div>
-      <span>Making IT Happen</span>
+      <span class="span-tagline">Making IT Happen</span>
       <p>The UP System Information Technology Foundation (UPSITF), Inc. is a
         non-government organization focused on the application of Information and
         Communication Technology for development. It partners with the UP

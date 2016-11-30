@@ -1,5 +1,7 @@
 /* HEADER */
 
+
+
 /* LAYOUT */
 
 a, a *,
@@ -102,12 +104,29 @@ ul {
 /* HEADER */
 
 .navbar {
+  z-index: 1;
   margin-bottom: 0;
-  background: transparent;
+  background: rgba(0,0,0,0);
+  border-style: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #999;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
 }
 
 .navbar+section:first-of-type {
   margin-top: -52px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #333;
 }
 
 /* HOME - LAYOUT */
@@ -155,10 +174,32 @@ ul {
   align-self: center;
 }
 
+.jumbotron-slide>div>.row>div>.jumbotron-slide-content>.jumbotron-slide-content-inner>span {
+  display: inline-block;
+}
+
+/*
 .jumbotron-slide h1 {
   margin-top: 0;
   color: white;
 }
+*/
+
+.jumbotron-slide .span-category {
+  color: white;
+}
+
+.jumbotron-slide .span-copy {
+  color: white;
+  font-size: 1.5em;
+}
+
+.jumbotron-slide .span-title {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
 
 .jumbotron-slide p {
   color: white;
@@ -207,39 +248,43 @@ ul {
 .panel.panel-news-unit.panel-news-unit-large {
   border-width: 0;
   background-color: #333;
+  padding:0;
 }
 
 .panel.panel-news-unit-large-content {
-  margin-top: -15px;
-  margin-bottom: -15px;
-  background: transparent;
+  /*margin-top: -15px;*/
+  margin-bottom: 0;
+  background: rgba(0,0,0,0);
 }
 
 @media (min-width: 1200px) {
   .panel.panel-news-unit-large-content {
-    min-height: 250px;
+    height: 320px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .panel.panel-news-unit-large-content {
-    min-height: 250px;
+    height: 250px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .panel.panel-news-unit-large-content {
-    min-height: 250px;
+    height: 250px;
   }
 }
 
 .panel.panel-news-unit-large-content.panel-news-unit-large-content-image {
   border-width: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .panel.panel-news-unit-large-content.panel-news-unit-large-content-text {
   border-width: 0;
-
+  /*padding: 60px 30px;*/
 }
 
 .panel.panel-news-unit-large-content.panel-news-unit-large-content-text h2 {
@@ -368,7 +413,7 @@ ul {
 .panel.panel-events-unit-content {
   margin-top: -15px;
   margin-bottom: -15px;
-  background: transparent;
+  background: rgba(0,0,0,0);
 }
 
 @media (min-width: 1200px) {
@@ -383,6 +428,7 @@ ul {
 
 .panel.panel-events-unit-content.panel-events-unit-content-text {
   border-width: 0;
+  padding: 60px 30px;
 }
 
 .panel.panel-events-unit-content.panel-events-unit-content-text h2 {
@@ -393,7 +439,7 @@ ul {
   color: white;
 }
 
-/* ABOUT */
+/* HOME - ABOUT */
 
 .section-home-about {
   background-color: #777;
@@ -401,16 +447,85 @@ ul {
   padding-bottom: 100px;
 }
 
-.section-home-about span {
-
+.section-home-about .span-tagline {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .section-home-about p {
-
+  color: white;
 }
 
-/* FOOTER */
+/* SHORT COURSES */
 
-footer {
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image>.filler {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   background-color: #333;
 }
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register {
+  margin-top: 10px;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-text {
+  display: inline-block;
+  width: calc(100% - 105px);
+  padding-left: 10px;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-text h4 {
+  margin-bottom: 5px;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-text h4 small {
+  display: block;
+  margin-top: 3px;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-text>span {
+  display: block;
+}
+
+.table-shortcourses {
+  width: 100%;
+}
+
+.table-shortcourses tbody tr td:nth-child(1) {
+
+}
+
+.table-shortcourses tbody tr td:nth-child(2) {
+
+}
+
+.table-shortcourses tbody tr td:nth-child(3) {
+
+}
+
+.table-shortcourses tbody tr td:nth-child(4) {
+  width: 110px;
+}
+
+.table-shortcourses tbody tr td>span {
+  display: block;
+}
+
+.div-registration>div>div {
+  padding-bottom: 15px;
+}
+
+/*
+.div-registration div>p:last-child,
+.div-registration div>ul:last-child {
+  margin-bottom: 0;
+}
+*/
