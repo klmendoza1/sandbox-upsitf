@@ -51,6 +51,10 @@
   <link href="/css/lean.css" rel="stylesheet">
   <link href="/css/custom.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,7 +66,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-custom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -73,7 +77,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img alt="Brand">
+        <img alt="UPSITF">
       </a>
     </div>
 
@@ -96,7 +100,17 @@
 </nav>
 
 
-    <section><div>
+    <section><div class="slick-jumbotron">
+
+  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+    <span class="span-category">Technical Course Programs <span>Short Courses</span></span>
+    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
+    <span class="span-title">CCNA Modules 1 to 4</span>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div></div></div></div></div></div>
 
   <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
     <span class="span-category">Technical Course Programs <span>Short Courses</span></span>
@@ -114,7 +128,7 @@
 
   
 
-  <section class="section-home section-home-shortcourses">
+  <section id="shortcourses" class="section-home section-home-shortcourses">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -145,7 +159,7 @@
     </div></div>
   </section>
 
-  <section class="section-home section-home-services">
+  <section id="services" class="section-home section-home-services">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -180,7 +194,7 @@
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="/services"><div class="panel panel-service">
         <h2>
           +
-          <small></small>
+          <small>Consultations &amp; Other Services</small>
         </h2>
         <ul>
           <li>Systems Audit and Portfolio Management</li>
@@ -193,7 +207,7 @@
     </div></div>
   </section>
 
-  <section class="section-home section-home-events">
+  <section id="events" class="section-home section-home-events">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -203,7 +217,7 @@
 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="panel panel-nomargins panel-events">
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image">
                 <img>
               </div></div>
@@ -214,7 +228,7 @@
               </div></div>
             </div></div></a></div></div>
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image">
                 <img>
               </div></div>
@@ -238,7 +252,7 @@
 
   </section>
 
-  <section class="section-home section-home-about">
+  <section id="about" class="section-home section-home-about">
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"><div>
       <span class="span-tagline">Making IT Happen</span>
       <p>The UP System Information Technology Foundation (UPSITF), Inc. is a
@@ -310,7 +324,33 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.slick-jumbotron').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".table-shortcourses button").click(function() {
+    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
+  });
+});
+</script>
 
 
   </body>

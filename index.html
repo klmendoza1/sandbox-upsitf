@@ -2,7 +2,17 @@
 layout: main
 ---
 
-<section><div>
+<section><div class="slick-jumbotron">
+
+  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+    <span class="span-category">Technical Course Programs <span>Short Courses</span></span>
+    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
+    <span class="span-title">CCNA Modules 1 to 4</span>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div></div></div></div></div></div>
 
   <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
     <span class="span-category">Technical Course Programs <span>Short Courses</span></span>
@@ -19,10 +29,10 @@ layout: main
 <section>
 
   {% if site.switchBlog == true %}
-  <section class="section-home section-home-news">
+  <section id="blog" class="section-home section-home-news">
 
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <h1 class="hidden">News</h1>
+      <h1 class="hidden">Blog</h1>
       <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="panel panel-nomargins panel-news">
 
         <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-news-unit panel-news-unit-large"><div class="row">
@@ -62,7 +72,7 @@ layout: main
   </section>
   {% endif %}
 
-  <section class="section-home section-home-shortcourses">
+  <section id="shortcourses" class="section-home section-home-shortcourses">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -93,7 +103,7 @@ layout: main
     </div></div>
   </section>
 
-  <section class="section-home section-home-services">
+  <section id="services" class="section-home section-home-services">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -128,7 +138,7 @@ layout: main
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="{{ site.baseurl }}/services"><div class="panel panel-service">
         <h2>
           +
-          <small></small>
+          <small>Consultations &amp; Other Services</small>
         </h2>
         <ul>
           <li>Systems Audit and Portfolio Management</li>
@@ -141,7 +151,7 @@ layout: main
     </div></div>
   </section>
 
-  <section class="section-home section-home-events">
+  <section id="events" class="section-home section-home-events">
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -151,7 +161,7 @@ layout: main
 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="panel panel-nomargins panel-events">
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image">
                 <img>
               </div></div>
@@ -162,7 +172,7 @@ layout: main
               </div></div>
             </div></div></a></div></div>
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image">
                 <img>
               </div></div>
@@ -186,7 +196,7 @@ layout: main
 
   </section>
 
-  <section class="section-home section-home-about">
+  <section id="about" class="section-home section-home-about">
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"><div>
       <span class="span-tagline">Making IT Happen</span>
       <p>The UP System Information Technology Foundation (UPSITF), Inc. is a

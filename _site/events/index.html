@@ -51,6 +51,10 @@
   <link href="/css/lean.css" rel="stylesheet">
   <link href="/css/custom.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,7 +66,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-custom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -73,7 +77,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img alt="Brand">
+        <img alt="UPSITF">
       </a>
     </div>
 
@@ -98,11 +102,9 @@
 
     <section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+  <section class="section-header"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
-    <h1>
-      Events
-    </h1>
+    <h1>Events</h1>
 
     <div class="row">
       <div class="col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0">
@@ -117,15 +119,15 @@
           tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
           consequat.</p>
         <ul class="ul-sections">
-          <li><a>Y4iT</a></li>
-          <li><a>Academic Tours</a></li>
+          <li style="text-transform:none;"><a href="#y4it">Y4iT</a></li>
+          <li><a href="#tours">Academic Tours</a></li>
         </ul>
       </div>
     </div>
 
   </div></div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="y4it"><div class="container-fluid container-fluid-max"><div class="row">
 
     <div class="col-lg-4 col-lg-push-8"><img></div>
     <div class="col-lg-8 col-lg-pull-4">
@@ -142,7 +144,7 @@
 
   </div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="tours"><div class="container-fluid container-fluid-max"><div class="row">
 
       <div class="col-lg-4 col-lg-push-8"><img></div>
       <div class="col-lg-8 col-lg-pull-4">
@@ -215,7 +217,33 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.slick-jumbotron').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".table-shortcourses button").click(function() {
+    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
+  });
+});
+</script>
 
 
   </body>

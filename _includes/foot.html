@@ -1,4 +1,30 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.slick-jumbotron').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".table-shortcourses button").click(function() {
+    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
+  });
+});
+</script>

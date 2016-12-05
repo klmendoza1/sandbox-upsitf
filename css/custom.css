@@ -6,6 +6,21 @@ h1 {
   text-transform: uppercase;
 }
 
+.ul-sections li a {
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.ul-sections li a:hover,
+.ul-sections li a:focus {
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
 .panel.panel-news-unit.panel-news-unit-small {
   background:
     linear-gradient(

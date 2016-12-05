@@ -51,6 +51,10 @@
   <link href="/css/lean.css" rel="stylesheet">
   <link href="/css/custom.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,7 +66,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-custom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -73,7 +77,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img alt="Brand">
+        <img alt="UPSITF">
       </a>
     </div>
 
@@ -98,11 +102,9 @@
 
     <section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+  <section class="section-header"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
-    <h1>
-      Other Services
-    </h1>
+    <h1>Other Services</h1>
 
     <div class="row">
       <div class="col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0">
@@ -114,17 +116,17 @@
           you a working set of IT skills that are responsive to the demands of
           the ever-changing and developing IT industry.</p>
         <ul class="ul-sections">
-          <li><a>CCT (Corporate)</a></li>
-          <li><a>Consultations</a></li>
-          <li><a>TBC4K (Kids &amp; Teens)</a></li>
-          <li><a>ICT4D (Academe)</a></li>
+          <li><a href="#cct">CCT (Corporate)</a></li>
+          <li><a href="#consultations">Consultations</a></li>
+          <li><a href="#tbc4k">TBC4K (Kids &amp; Teens)</a></li>
+          <li><a href="#ict4d">ICT4D (Academe)</a></li>
         </ul>
       </div>
     </div>
 
   </div></div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="cct"><div class="container-fluid container-fluid-max"><div class="row">
 
     <div class="col-lg-4 col-lg-push-8"><img></div>
     <div class="col-lg-8 col-lg-pull-4">
@@ -137,7 +139,7 @@
 
   </div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="consultations"><div class="container-fluid container-fluid-max"><div class="row">
 
     <div class="col-lg-4 col-lg-push-8"><img></div>
     <div class="col-lg-8 col-lg-pull-4">
@@ -154,7 +156,7 @@
 
   </div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="tbc4k"><div class="container-fluid container-fluid-max"><div class="row">
 
       <div class="col-lg-4 col-lg-push-8"><img></div>
       <div class="col-lg-8 col-lg-pull-4">
@@ -168,7 +170,7 @@
 
   </div></div></section>
 
-  <section><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="ict4d"><div class="container-fluid container-fluid-max"><div class="row">
 
       <div class="col-lg-4 col-lg-push-8"><img></div>
       <div class="col-lg-8 col-lg-pull-4">
@@ -248,7 +250,33 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.slick-jumbotron').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".table-shortcourses button").click(function() {
+    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
+  });
+});
+</script>
 
 
   </body>

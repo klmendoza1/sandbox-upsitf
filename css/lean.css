@@ -1,6 +1,49 @@
 /* HEADER */
 
+@media (min-width: 768px) {
+  .navbar-fixed-custom .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
+.navbar-fixed-custom .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .navbar-fixed-custom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-custom {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-fixed-custom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-custom {
+    border-radius: 0;
+  }
+}
+.navbar-fixed-custom {
+  top: 0;
+  border-width: 0 0 1px;
+}
 
 /* LAYOUT */
 
@@ -9,6 +52,7 @@ a:link, a:link *,
 a:hover, a:hover *,
 a:focus, a:focus * {
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -43,6 +87,14 @@ a:focus, a:focus * {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.75em;
 }
 
 .multicol {
@@ -82,6 +134,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .multicol.multicol-md-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .multicol.multicol-md-3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .multicol.multicol-sm-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .multicol.multicol-sm-3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -99,6 +177,47 @@ ul {
 
 .ul-sections li:last-child {
   margin-right: 0;
+}
+
+.ul-sections li a {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: rgba(255,255,255,0);
+}
+
+.ul-sections li a:hover,
+.ul-sections li a:focus {
+  border-color: rgba(255,255,255,1);
+}
+
+/* SECTION HEADER */
+
+.section-header {
+  background-color: #777;
+  min-height: 310px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.section-header h1 {
+  color: white;
+}
+
+.section-header h1 small {
+  color: white;
+}
+
+.section-header span {
+  color: white;
+}
+
+.section-header p {
+  color: white;
+}
+
+.section-header ul li,
+.section-header ul li a {
+  color: white;
 }
 
 /* HEADER */
@@ -119,9 +238,11 @@ ul {
   color: white;
 }
 
+/*
 .navbar+section:first-of-type {
   margin-top: -52px;
 }
+*/
 
 /* FOOTER */
 
@@ -147,6 +268,18 @@ footer {
 
 /* JUMBOTRON */
 
+.slick-jumbotron {
+  height: calc(100vh - 100px);
+  min-height: 450px;
+  max-height: 1200px;
+  background-color: #777;
+}
+
+.slick-jumbotron>.slick-list,
+.slick-jumbotron>.slick-list>.slick-track {
+  height: 100%;
+}
+
 .jumbotron-slide {
   height: calc(100vh - 100px);
   min-height: 450px;
@@ -160,7 +293,8 @@ footer {
 }
 
 .jumbotron-slide>div>.row>div {
-  height: calc(100% - 52px);
+  /*height: calc(100% - 52px);*/
+  height: 100%;
 }
 
 .jumbotron-slide>div>.row>div>.jumbotron-slide-content {
@@ -351,7 +485,7 @@ footer {
 
 @media (min-width: 1200px) {
   .panel.panel-service {
-    min-height: 240px;
+    min-height: 280px;
   }
 }
 
@@ -363,7 +497,13 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .panel.panel-service {
-    min-height: 350px;
+    min-height: 410px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .panel.panel-service {
+    min-height: 195px;
   }
 }
 
@@ -459,6 +599,10 @@ footer {
 
 /* SHORT COURSES */
 
+.div-offerings {
+  margin-top: 20px;
+}
+
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image {
   display: inline-block;
   width: 100px;
@@ -497,6 +641,17 @@ footer {
 
 .table-shortcourses {
   width: 100%;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+}
+
+.table-shortcourses thead {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+.table-shortcourses thead tr th:last-child {
+  text-align: right;
 }
 
 .table-shortcourses tbody tr td:nth-child(1) {
@@ -517,6 +672,10 @@ footer {
 
 .table-shortcourses tbody tr td>span {
   display: block;
+}
+
+.div-registration {
+  margin-top: 20px;
 }
 
 .div-registration>div>div {
