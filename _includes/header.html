@@ -17,11 +17,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
 
-        {% if site.switchBlog == true %}<li><a href="#">Blog</a></li>{% endif %}
+        {% if site.switchBlog == true %}<li><a href="#"><div>Blog</div></a></li>{% endif %}
 
         {% if site.headerDropdown == true %}
         <li class="dropdown">
-          <a href="{{ site.baseurl }}/shortcourses" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Short Courses<span class="caret"></span></a>
+          <a href="{{ site.baseurl }}/courses" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Schedules &amp; Rates</a></li>
             <li><a href="#">Course Offerings</a></li>
@@ -42,7 +42,8 @@
           <a href="{{ site.baseurl }}/events" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Y4iT</a></li>
-            <li><a href="#">Academic Tours</a></li>
+            <li><a href="#">YRS</a></li>
+            <li><a href="#">SYNC UP</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -52,10 +53,10 @@
           </ul>
         </li>
         {% else %}
-        <li><a href="{{ site.baseurl }}/shortcourses">Short Courses</a></li>
-        <li><a href="{{ site.baseurl }}/services">Services</a></li>
-        <li><a href="{{ site.baseurl }}/events">Events</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
+        <li><a href="{{ site.baseurl }}/courses"><div>Courses</div></a></li>
+        <li><a href="{{ site.baseurl }}/services"><div>Services</div></a></li>
+        <li><a href="{{ site.baseurl }}/events"><div>Events</div></a></li>
+        <li><a href="{{ site.baseurl }}/about"><div>About</div></a></li>
         {% endif %}
 
       </ul>

@@ -1,12 +1,39 @@
+/* HEADER */
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right li a div {
+    text-transform: uppercase;
+  }
+  .navbar-nav.navbar-right li a div {
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+  .navbar-nav.navbar-right li a:hover div,
+  .navbar-nav.navbar-right li a:focus div {
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+}
+
+/* LAYOUT */
+
 h1 {
   text-transform: uppercase;
 }
 
-.ul-sections {
+.ul-sections,
+.ul-jumbotron-slide li a:not(.btn),
+.ul-home-about li a:not(.btn) {
   text-transform: uppercase;
 }
 
-.ul-sections li a {
+.ul-sections li a,
+.ul-jumbotron-slide li a:not(.btn),
+.ul-home-about li a:not(.btn) {
   -webkit-transition: 250ms ease-out;
   -moz-transition: 250ms ease-out;
   -o-transition: 250ms ease-out;
@@ -14,7 +41,11 @@ h1 {
 }
 
 .ul-sections li a:hover,
-.ul-sections li a:focus {
+.ul-sections li a:focus,
+.ul-jumbotron-slide li a:not(.btn):hover,
+.ul-jumbotron-slide li a:not(.btn):focus,
+.ul-home-about li a:hover:not(.btn),
+.ul-home-about li a:focus:not(.btn) {
   -webkit-transition: 250ms ease-out;
   -moz-transition: 250ms ease-out;
   -o-transition: 250ms ease-out;

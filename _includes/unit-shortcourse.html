@@ -1,3 +1,6 @@
+{% assign found = false %}
+{% for eachcategory in page.dataCourseOfferings %}{% for eachitemincategory in eachcategory.list %}{% if eachitemincategory.id == eachitem.id %}
+
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     {% if page.switchFillers == true %}
@@ -5,10 +8,11 @@
     {% else %}
     <img>
     {% endif %}
+    {% if eachitemincategory.file %}<a href="{{ site.baseurl }}{{ eachitemincategory.file }}" target="_blank">View Syllabus</a>{% endif %}
     <a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register">Register</a>
   </div>
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-text">
-    {% if eachitem.name %}<h4>{{ eachitem.name }}{% if eachitem.category %}<small>{{ eachitem.category }}</small>{% endif %}</h4>{% endif %}
+    {% if eachitemincategory.name %}<h4>{{ eachitemincategory.name }}{% if eachcategory.name %}<small>{{ eachcategory.name }}</small>{% endif %}</h4>{% endif %}
     <span>
       {% if eachitem.dateStart or eachitem.dateEnd %}
       {% if eachitem.dateStart %}{{ eachitem.dateStart }}{% else %}TBA{% endif %}
@@ -43,3 +47,5 @@
     {% endif %}
   </div>
 </div>
+
+{% assign found = true %}{% break %}{% endif %}{% endfor %}{% if found == true %}{% break %}{% endif %}{% endfor %}
