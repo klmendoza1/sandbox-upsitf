@@ -1,43 +1,43 @@
 <footer>
 
-  <div class="container-fluid"><div class="row">
+  <div class="container-fluid footer-main"><div class="row">
 
-    <div class="col-lg-6">
-      <ul>
-        <li><a>Home</a></li>
-        {% if site.switchBlog == true %}<li><a>Blog</a></li>{% endif %}
-        <li>
-          <a>Courses</a>
+    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+      <div class="multicol multicol-lg-3 multicol-md-3 multicol-sm-3">
+        <!--div class="multicol-unit"><a>Home</a></div-->
+        {% if site.switchBlog == true %}<div class="multicol-unit"><a>Blog</a></div>{% endif %}
+        <div class="multicol-unit">
+          <a href="{{ site.baseurl }}/courses">Courses</a>
           <ul>
-            <li><a>Schedules &amp; Rates</a></li>
-            <li><a>Course Offerings</a></li>
-            <li><a>Registration</a></li>
+            <li><a href="{{ site.baseurl }}/courses#schedul">Schedules</a></li>
+            <li><a href="{{ site.baseurl }}/courses#offerings">Offerings</a></li>
+            <li><a href="{{ site.baseurl }}/courses#registration">Registration</a></li>
           </ul>
-        </li>
-        <li>
-          <a>Services</a>
+        </div>
+        <div class="multicol-unit">
+          <a href="{{ site.baseurl }}/services">Services</a>
           <ul>
-            <li><a>Corporate Customized Training - CCT</a></li>
-            <li><a>Consultations &amp; Other Services</a></li>
-            <li><a>Tech Boot Camp for Kids + Teens - TBC4K</a></li>
-            <li><a>ICT for Development - ICT4D</a></li>
+            <li><a href="{{ site.baseurl }}/services#cct">CCT</a></li>
+            <li><a href="{{ site.baseurl }}/services#consultations">Consultations</a></li>
+            <li><a href="{{ site.baseurl }}/services#tbc4k">TBC4K</a></li>
+            <li><a href="{{ site.baseurl }}/services#ict4d">ICT4D</a></li>
           </ul>
-        </li>
-        <li>
-          <a>Events</a>
+        </div>
+        <div class="multicol-unit">
+          <a href="{{ site.baseurl }}/events">Events</a>
           <ul>
-            <li><a>Youth Congress on Information Technology - Y4iT</a></li>
-            <li><a>Y4iT Research Summit - YRS</a></li>
-            <li><a>SYNC UP</a></li>
+            <li><a href="{{ site.baseurl }}/events#y4it">Y4iT</a></li>
+            <li><a href="{{ site.baseurl }}/events#yrs">YRS</a></li>
+            <li><a href="{{ site.baseurl }}/events#syncup">SYNC UP</a></li>
           </ul>
-        </li>
-        <!--li>
+        </div>
+        <!--div class="multicol-unit">
           <a>About</a>
           <ul>
             <li><a>Contact</a></li>
           </ul>
-        </li-->
-      </ul>
+        </a></div-->
+      </div>
     </div>
 
     <div class="col-lg-6">
@@ -57,7 +57,7 @@
 
   </div></div>
 
-  <div class="container-fluid"><div class="row"><div class="col-lg-12">
+  <div class="container-fluid footer-legal text-center"><div class="row"><div class="col-lg-12">
     <span>&copy; 2016 UP System Information Technology Foundation, Inc. All the
       contents on this site are protected by copyright law.</span>
   </div></div></div>

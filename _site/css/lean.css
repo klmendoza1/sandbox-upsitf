@@ -148,6 +148,11 @@ p {
     -moz-column-count: 3;
     column-count: 3;
   }
+  .multicol.multicol-lg-4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -160,6 +165,11 @@ p {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+  }
+  .multicol.multicol-md-4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }
 
@@ -174,6 +184,24 @@ p {
     -moz-column-count: 3;
     column-count: 3;
   }
+  .multicol.multicol-sm-4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+.section-header+section>section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-header+section>section:first-child {
+  padding-top: 60px;
+}
+
+.section-header+section>section:last-child {
+  padding-bottom: 60px;
 }
 
 ul {
@@ -240,6 +268,11 @@ ul {
   color: white;
 }
 
+.section-header .span-copy {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .section-header p {
   color: white;
 }
@@ -279,6 +312,39 @@ ul {
 
 footer {
   background-color: #333;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+.footer-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-main .multicol {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .multicol .multicol-unit {
+    padding-bottom: 0;
+  }
+}
+
+/*
+footer ul {
+  margin-left: 15px;
+}
+*/
+
+.footer-legal {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75em;
+  background-color: #555;
 }
 
 /* HOME - LAYOUT */
@@ -351,12 +417,17 @@ footer {
 */
 
 .jumbotron-slide .span-category {
+  margin-bottom: 5px;
   color: white;
 }
 
+.span-copy {
+  font-size: 1.5em;
+}
+
+.section-header .span-copy,
 .jumbotron-slide .span-copy {
   color: white;
-  font-size: 1.5em;
 }
 
 .jumbotron-slide .span-title {
@@ -652,11 +723,6 @@ footer {
   background-color: #333;
 }
 
-.div-trainings-main-unit-content.div-trainings-main-unit-content-image>a:not(.btn) {
-  font-size: 0.75em;
-  text-transform: uppercase;
-}
-
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register {
   margin-top: 5px;
 }
@@ -699,17 +765,10 @@ footer {
 
 @media (min-width: 768px) {
 
-  .table-shortcourses colgroup col:nth-child(1) {
-    width: calc((100% - 110px) / 3);
-  }
+  .table-shortcourses colgroup col:nth-child(1) {}
 
-  .table-shortcourses colgroup col:nth-child(2) {
-    width: calc((100% - 110px) / 3);
-  }
-
-  .table-shortcourses colgroup col:nth-child(3) {
-    width: calc((100% - 110px) / 3);
-  }
+  .table-shortcourses colgroup col:nth-child(2) {}
+  .table-shortcourses colgroup col:nth-child(3) {}
 
 }
 
@@ -726,8 +785,43 @@ footer {
   text-align: right;
 }
 
+@media (min-width: 768px) {
+
+.table-shortcourses tbody tr td {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.table-shortcourses tbody tr:first-child td {
+  padding-top: 15px;
+}
+
+.table-shortcourses tbody tr:last-child td {
+  padding-bottom: 15px;
+}
+
+}
+
 .table-shortcourses tbody tr td>span {
   display: block;
+}
+
+
+.table-shortcourses tbody tr td:nth-child(1) {
+  width: calc(((100% - (110px + 45px)) / 3) + 7.5px);
+  padding-right: 7.5px;
+}
+
+.table-shortcourses tbody tr td:nth-child(2) {
+  width: calc(((100% - (110px + 45px)) / 3) + 15px);
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.table-shortcourses tbody tr td:nth-child(3) {
+  width: calc(((100% - (110px + 45px)) / 3) + 22.5px);
+  padding-left: 7.5px;
+  padding-right: 15px;
 }
 
 .table-shortcourses tbody tr td:nth-child(1) h5 {

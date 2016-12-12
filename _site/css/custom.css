@@ -25,6 +25,38 @@ h1 {
   text-transform: uppercase;
 }
 
+/* BUTTON - V1 */
+/*.btn.btn-default {
+    background-color: maroon;
+    border-width: 0 0 3px 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: white;
+    border-color: #611a18;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+}*/
+/* BUTTON - V2 */
+.btn.btn-default {
+  background-color: transparent;
+  border-width: 3px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+}
+
+.jumbotron-slide .btn.btn-default,
+.section-header .btn.btn-default,
+.section-maroon .btn.btn-default,
+#about .btn.btn-default {
+  color: white;
+  border-color: #ffffff;
+}
+
 .ul-sections,
 .ul-jumbotron-slide li a:not(.btn),
 .ul-home-about li a:not(.btn) {
@@ -64,4 +96,49 @@ h1 {
 
 .panel.panel-news-unit.panel-news-unit-small h2 {
   color: white;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image>a:not(.btn) {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.table-shortcourses tbody tr td:nth-child(1) a {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+/* HOME */
+
+.section-maroon {
+  background-color: maroon;
+}
+
+.section-maroon h1,
+.section-maroon h2,
+.section-maroon h3,
+.section-maroon h4,
+.section-maroon h5,
+.section-maroon h6,
+.section-blue h1,
+.section-blue h2,
+.section-blue h3,
+.section-blue h4,
+.section-blue h5,
+.section-blue h6 {
+  color: white;
+}
+
+#services {
+  background-color: maroon;
+}
+
+/* COURSES */
+
+#offerings {
+  background-color: maroon;
+}
+
+#registration {
+  background-color: blue;
 }
