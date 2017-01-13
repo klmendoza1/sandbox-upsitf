@@ -725,6 +725,12 @@ footer ul {
 
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register {
   margin-top: 5px;
+  font-size: 0.9em;
+  border-width: 2pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 8pt;
+  padding-right: 8pt;
 }
 
 .div-trainings-main-unit-content.div-trainings-main-unit-content-text {
@@ -763,18 +769,25 @@ footer ul {
   border-width: 1px 0 1px 0;
 }
 
+.table-shortcourses colgroup col:nth-child(1) {width: calc(((100% - (90.5px + 45px)) / 3) + 7.5px);}
+.table-shortcourses colgroup col:nth-child(2) {width: calc(((100% - (90.5px + 45px)) / 3) + 15px);}
+.table-shortcourses colgroup col:nth-child(3) {width: calc(((100% - (90.5px + 45px)) / 3) + 22.5px);}
+.table-shortcourses colgroup col:last-child {width: 90.5px;}
+
 @media (min-width: 768px) {
 
   .table-shortcourses colgroup col:nth-child(1) {}
-
   .table-shortcourses colgroup col:nth-child(2) {}
   .table-shortcourses colgroup col:nth-child(3) {}
+  .table-shortcourses colgroup col:last-child {}
 
 }
 
+/*
 .table-shortcourses colgroup col:nth-child(4) {
   width: 78px;
 }
+*/
 
 .table-shortcourses thead {
   border-style: solid;
@@ -822,6 +835,19 @@ footer ul {
   width: calc(((100% - (110px + 45px)) / 3) + 22.5px);
   padding-left: 7.5px;
   padding-right: 15px;
+}
+
+.table-shortcourses tbody tr td:last-child {
+  min-width: 110px;
+}
+
+.table-shortcourses tbody tr td:last-child .btn-register {
+  font-size: 0.9em;
+  border-width: 2pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 8pt;
+  padding-right: 8pt;
 }
 
 .table-shortcourses tbody tr td:nth-child(1) h5 {
