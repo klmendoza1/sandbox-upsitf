@@ -1,50 +1,70 @@
 ---
 layout: main
+
+dataAds:
+ - image: "bg-oraclesql.jpg"
+   category: "Technical Course Programs"
+   title: "Oracle SQL Fundamentals"
+   copyPostTitle:
+    - "Learn the concepts of relational"
+    - "database and the Oracle database technology."
+   description: "After learning the basics of SQL, you will be introduced to its advanced features, such as schema objects, manipulation of large data sets, and advanced querying."
+   select:
+    - text: "More Info"
+      url:
+       - 'site.baseurl'
+       - "/courses#schedules"
+    - text: "Register"
+      url: 'site.urlRegForm'
+      type: 'button'
+ - image: "bg-pm.jpg"
+   category: "Technical Course Programs"
+   title: "Project Management"
+   copyPostTitle: "Be PMP ready now."
+   description: "Understand the stages of project management and its importance to improve the success of information technology projects. This course aims to broaden one's knowledge of project management terms techniques."
+   select:
+    - text: "More Info"
+      url:
+       - 'site.baseurl'
+       - "/courses#schedules"
+    - text: "Register"
+      url: 'site.urlRegForm'
+      type: 'button'
+ - image: "bg-hacking.jpg"
+   category: "Technical Course Programs"
+   title: "Ethical Hacking"
+   copyPreTitle: "Coming Soon: New Course!"
+   description: "This course will introduce students to the basics of website application, penetration testing, and bug bounty hunting."
+   select:
+    - text: "More Info"
+      url:
+       - 'site.baseurl'
+       - "/courses#schedules"
+    - text: "Register"
+      url: 'site.urlRegForm'
+      type: 'button'
 ---
 
 <section><div class="slick-jumbotron">
 
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
-    <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 1 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  {% for eachad in page.dataAds %}
+
+  <div class="jumbotron-slide" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('{{ site.baseurl }}/images/ads/{{ eachad.image }}')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+    <span class="span-category">{{ eachad.category }}</span>
+    {% if eachad.copyPreTitle %}<span class="span-copy">{% for eachcopy in eachad.copyPreTitle %}{{ eachcopy }}{% if forloop.last == false %}<br class="visible-lg visible-md"/>{% endif %}{% endfor %}</span>{% endif %}
+    <span class="span-title">{{ eachad.title }}</span>
+    {% if eachad.copyPostTitle %}<span class="span-copy">{% for eachcopy in eachad.copyPostTitle %}{{ eachcopy }}{% if forloop.last == false %}<br class="visible-lg visible-md"/>{% endif %}{% endfor %}</span>{% endif %}
+    <p>{{ eachad.description }}</p>
+    {% if eachad.select %}
     <ul class="ul-jumbotron-slide">
-      <li><a href="{{ site.baseurl }}/courses#schedules">More Info</a></li>
-      <li><a href="{{ site.urlRegForm }}" class="btn btn-default">Register</a></li>
+      {% for eachselect in eachad.select %}
+      <li><a href="{% for eachurl in eachselect.url %}{% if eachurl == 'site.baseurl' %}{{ site.baseurl }}{% elsif eachurl == 'site.urlRegForm' %}{{ site.urlRegForm }}{% else %}{{ eachurl }}{% endif %}{% endfor %}"{% if eachselect.type == 'button' %}class="btn btn-default"{% endif %}>{{ eachselect.text }}</a></li>
+      {% endfor %}
     </ul>
+    {% endif %}
   </div></div></div></div></div></div>
 
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
-    <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 2 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <ul class="ul-jumbotron-slide">
-      <li><a href="{{ site.baseurl }}/courses#schedules">More Info</a></li>
-      <li><a href="{{ site.urlRegForm }}" class="btn btn-default">Register</a></li>
-    </ul>
-  </div></div></div></div></div></div>
-
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
-    <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 3 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <ul class="ul-jumbotron-slide">
-      <li><a href="{{ site.baseurl }}/courses#schedules">More Info</a></li>
-      <li><a href="{{ site.urlRegForm }}" class="btn btn-default">Register</a></li>
-    </ul>
-  </div></div></div></div></div></div>
+  {% endfor %}
 
 </div></section>
 

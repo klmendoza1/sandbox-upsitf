@@ -102,47 +102,64 @@
 
     <section><div class="slick-jumbotron">
 
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+  
+
+  <div class="jumbotron-slide" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/ads/bg-oraclesql.jpg')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
     <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 1 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    
+    <span class="span-title">Oracle SQL Fundamentals</span>
+    <span class="span-copy">Learn the concepts of relational<br class="visible-lg visible-md"/>database and the Oracle database technology.</span>
+    <p>After learning the basics of SQL, you will be introduced to its advanced features, such as schema objects, manipulation of large data sets, and advanced querying.</p>
+    
     <ul class="ul-jumbotron-slide">
+      
       <li><a href="/courses#schedules">More Info</a></li>
-      <li><a href="https://sitf.typeform.com/to/tXnMb4" class="btn btn-default">Register</a></li>
+      
+      <li><a href="https://sitf.typeform.com/to/tXnMb4"class="btn btn-default">Register</a></li>
+      
     </ul>
+    
   </div></div></div></div></div></div>
 
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+  
+
+  <div class="jumbotron-slide" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/ads/bg-pm.jpg')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
     <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 2 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    
+    <span class="span-title">Project Management</span>
+    <span class="span-copy">Be PMP ready now.</span>
+    <p>Understand the stages of project management and its importance to improve the success of information technology projects. This course aims to broaden one's knowledge of project management terms techniques.</p>
+    
     <ul class="ul-jumbotron-slide">
+      
       <li><a href="/courses#schedules">More Info</a></li>
-      <li><a href="https://sitf.typeform.com/to/tXnMb4" class="btn btn-default">Register</a></li>
+      
+      <li><a href="https://sitf.typeform.com/to/tXnMb4"class="btn btn-default">Register</a></li>
+      
     </ul>
+    
   </div></div></div></div></div></div>
 
-  <div class="jumbotron-slide"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
+  
+
+  <div class="jumbotron-slide" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/ads/bg-hacking.jpg')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6"><div class="jumbotron-slide-content"><div class="jumbotron-slide-content-inner">
     <span class="span-category">Technical Course Programs</span>
-    <span class="span-copy">Expand your knowledge of <br/>networks and beyond</span>
-    <span class="span-title">CCNA Modules 3 to 4</span>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    <span class="span-copy">Coming Soon: New Course!</span>
+    <span class="span-title">Ethical Hacking</span>
+    
+    <p>This course will introduce students to the basics of website application, penetration testing, and bug bounty hunting.</p>
+    
     <ul class="ul-jumbotron-slide">
+      
       <li><a href="/courses#schedules">More Info</a></li>
-      <li><a href="https://sitf.typeform.com/to/tXnMb4" class="btn btn-default">Register</a></li>
+      
+      <li><a href="https://sitf.typeform.com/to/tXnMb4"class="btn btn-default">Register</a></li>
+      
     </ul>
+    
   </div></div></div></div></div></div>
+
+  
 
 </div></section>
 
@@ -399,7 +416,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".table-shortcourses button").click(function() {
-    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    $(this).parent().parent().parent().next("tbody").toggle();
     if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
   });
 });

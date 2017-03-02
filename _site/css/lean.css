@@ -254,6 +254,8 @@ ul {
   min-height: 310px;
   padding-top: 80px;
   padding-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-header h1 {
@@ -354,9 +356,11 @@ footer ul {
   padding-bottom: 30px;
 }
 
+/*
 .section-home:first-of-type {
   padding-top: 60px;
 }
+*/
 
 .section-home.section-home-events {
   padding-bottom: 60px;
@@ -382,7 +386,15 @@ footer ul {
   min-height: 450px;
   max-height: 1200px;
   background-color: #777;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/*
+.jumbotron-slide>div {
+  background-color: rgba(0,0,0,0.5);
+}
+*/
 
 .jumbotron-slide>div,
 .jumbotron-slide>div>.row {
@@ -434,6 +446,7 @@ footer ul {
   color: white;
   font-size: 3em;
   font-weight: bold;
+  line-height: 1em;
 }
 
 
@@ -769,10 +782,12 @@ footer ul {
   border-width: 1px 0 1px 0;
 }
 
+/*
 .table-shortcourses colgroup col:nth-child(1) {width: calc(((100% - (90.5px + 45px)) / 3) + 7.5px);}
 .table-shortcourses colgroup col:nth-child(2) {width: calc(((100% - (90.5px + 45px)) / 3) + 15px);}
 .table-shortcourses colgroup col:nth-child(3) {width: calc(((100% - (90.5px + 45px)) / 3) + 22.5px);}
 .table-shortcourses colgroup col:last-child {width: 90.5px;}
+*/
 
 @media (min-width: 768px) {
 

@@ -111,7 +111,11 @@ h1 {
 /* HOME */
 
 .section-maroon {
-  background-color: maroon;
+  background-color: #601418;
+}
+
+.section-blue {
+  background-color: #152c41;
 }
 
 .section-maroon h1,
@@ -126,6 +130,12 @@ h1 {
 .section-blue h4,
 .section-blue h5,
 .section-blue h6 {
+  color: white;
+}
+
+.section-maroon *,
+.section-blue *
+{
   color: white;
 }
 

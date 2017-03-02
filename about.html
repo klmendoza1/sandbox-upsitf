@@ -1,9 +1,11 @@
 ---
 layout: main
+
+imageHeader: "bg-about.jpg"
 ---
 
 
-  <section class="section-header"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+  <section class="section-header" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('{{ site.baseurl }}/images/headers/{{ page.imageHeader }}')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
     <h1>About UPSITF</h1>
 
@@ -13,13 +15,12 @@ layout: main
       </div>
       <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0">
         <span class="span-copy">We make IT happen</span>
-        <p>The UP System Information Technology Foundation (UPSITF), Inc. is a
-          non-government organization focused on the application of Information
-          and Communication Technology for development. It partners with the UP
+        <p>The UP System Information Technology Foundation is a
+          non-government organization focused on the application of ICT
+          for development. It partners with the UP
           Information Technology Development Center (UP ITDC) in providing
           various services such as Education Development, Research &amp;
-          Development, Software Engineering, and IT Project Management, among
-          others.</p>
+          Development, Software Engineering, and IT Project Management.</p>
       </div>
     </div>
 
@@ -34,7 +35,11 @@ layout: main
         <div class="row">
           <div class="col-lg-8"><div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.0687813183213!2d121.06600961484088!3d14.652036989769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7658337d509%3A0xf1d6be4f301a2196!2sVidal+A.+Tan+Hall%2C+Quirino+Avenue%2C+Diliman%2C+Quezon+City%2C+1101+Metro+Manila!5e0!3m2!1sen!2sph!4v1481184262692" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
           <div class="col-lg-4">
-            <span>3/F Vidal Tan Hall, Lorem Ipsum</span>
+            {% for eachaddress in site.contactAddress %}
+            {% if forloop.first %}<span>{% endif %}
+              {{ eachaddress }}
+            {% if forloop.last %}</span>{% else %}<br/>{% endif %}
+            {% endfor %}
             <span>Office Hours:
               <span>Mon-Fri 9 AM - 5 PM</span>
             </span>

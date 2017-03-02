@@ -23,7 +23,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".table-shortcourses button").click(function() {
-    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    $(this).parent().parent().parent().next("tbody").toggle();
     if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
   });
 });

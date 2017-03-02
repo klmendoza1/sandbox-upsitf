@@ -100,7 +100,7 @@
 </nav>
 
 
-    <section class="section-header"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+    <section class="section-header" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/headers/bg-courses.jpg')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
   <h1>Technical Course Programs</h1>
 
@@ -1787,7 +1787,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".table-shortcourses button").click(function() {
-    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    $(this).parent().parent().parent().next("tbody").toggle();
     if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
   });
 });

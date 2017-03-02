@@ -100,7 +100,7 @@
 </nav>
 
 
-    <section class="section-header"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+    <section class="section-header" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/headers/bg-events.jpg')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
   <h1>Events</h1>
 
@@ -109,13 +109,10 @@
       <img>
     </div>
     <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0">
-      <span class="span-copy">Imagine. Innovate. Inspire.</span>
-      <p>Being active pioneers in advancing information technology, UPSITF
-        also lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-        erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-        consequat.</p>
+      <span class="span-copy">Know more about the IT industry straight from the experts.</span>
+      <p>UPSITF organizes various events that provide students, educators, and
+        professionals comprehensive information and communication technology (ICT)
+        related seminars and learning opportunities.</p>
       <ul class="ul-sections">
         <li style="text-transform:none;"><a href="#y4it">Y4iT</a></li>
         <li><a href="#yrs">YRS</a></li>
@@ -140,6 +137,9 @@
         enthusiasts nationwide in a three-day congress packed with insightful
         and inspirational lectures and discussions.</p>
       <a class="btn btn-default">Official Website</a>
+      <a class="btn btn-default">FB</a>
+      <a class="btn btn-default">TW</a>
+      <a class="btn btn-default">IG</a>
     </div>
 
   </div></div></section>
@@ -156,6 +156,8 @@
           invited to submit research papers tackling various innovative
           ICT-related concepts, and chosen participants are called to present
           their work in the research summit.</p>
+        <a class="btn btn-default">Y4iT on Facebook</a>
+        <a class="btn btn-default">TW</a>
       </div>
 
   </div></div></section>
@@ -171,6 +173,7 @@
           strengthening Y4iT’s partnership with the youth, both can work
           together in shaping the future of the industry to support national
           progress.</p>
+        <a class="btn btn-default">UPSITF on Facebook</a>
       </div>
 
   </div></div></section>
@@ -270,7 +273,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".table-shortcourses button").click(function() {
-    $(this).parent().parent().parent().next("tbody").fadeToggle();
+    $(this).parent().parent().parent().next("tbody").toggle();
     if ($(this).text() == "+") {$(this).text("-");} else if ($(this).text() == "-") {$(this).text("+");}
   });
 });
