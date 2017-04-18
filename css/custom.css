@@ -1,5 +1,7 @@
 /* HEADER */
 
+
+
 @media (min-width: 768px) {
   .navbar-nav.navbar-right li a div {
     text-transform: uppercase;
@@ -19,24 +21,105 @@
   }
 }
 
+@media (min-width: 768px) {
+  .navbar.navbar-default.navbar-fixed-custom { /* needed stronger selector */
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar.navbar-default.navbar-fixed-custom { /* needed stronger selector */
+    background-color: #601418;
+    transition: background-color 0.5s ease-in-out;
+    min-height: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-brand {
+    height: 110px;
+  }
+  .navbar-brand img {
+    height:80px;
+    display:inline-block;
+    margin-right: 15px;
+  }
+  .navbar-brand span {
+    color: white !important;
+  }
+}
+
+@media (max-width:768px) {
+  .navbar-brand {
+    height: 60px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+  }
+  .navbar-brand img {
+    height:45px;
+    display:inline-block;
+  }
+}
+
+
+.navbar-default .navbar-toggle {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -15px;
+  height: 60px;
+  width: 60px;
+  border-style: none;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  height: 3px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: 0;
+  width: 12px;
+  border-radius: 0;
+  transition: margin-right 0.5s ease-in-out, width 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 6px;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar {
+  margin-right: 18px;
+  width: 24px;
+  transition: margin-right 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
+  transform: rotate(-45deg) translate(-6.5px,6.5px);
+  transition: margin-right 0.5s ease-in-out, width 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
+  background-color: transparent;
+  transition: margin-right 0.5s ease-in-out, width 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:last-of-type {
+  transform: rotate(45deg) translate(-6.5px,-6.5px);
+  transition: margin-right 0.5s ease-in-out, width 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
 /* LAYOUT */
 
 h1 {
   text-transform: uppercase;
 }
 
-/* BUTTON - V1 */
-/*.btn.btn-default {
-    background-color: maroon;
-    border-width: 0 0 3px 0;
-    border-radius: 0;
-    text-transform: uppercase;
-    color: white;
-    border-color: #611a18;
-    font-size: 1.25em;
-    letter-spacing: 1px;
-    padding-bottom: 4px;
-}*/
 /* BUTTON - V2 */
 .btn.btn-default {
   background-color: transparent;
@@ -47,14 +130,99 @@ h1 {
   letter-spacing: 1px;
   padding-bottom: 4px;
   padding-top: 5px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .jumbotron-slide .btn.btn-default,
 .section-header .btn.btn-default,
 .section-maroon .btn.btn-default,
-#about .btn.btn-default {
+body>section.section-body #about .btn.btn-default {
   color: white;
   border-color: #ffffff;
+}
+
+.jumbotron-slide .btn.btn-default,
+.section-header .btn.btn-default,
+.section-maroon .btn.btn-default,
+body>section.section-body #about .btn.btn-default {
+  background-color: transparent;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.jumbotron-slide .btn.btn-default:hover,
+.jumbotron-slide .btn.btn-default:active,
+.section-header .btn.btn-default:hover,
+.section-header .btn.btn-default:active,
+.section-maroon .btn.btn-default:hover,
+.section-maroon .btn.btn-default:active,
+.section-blue .btn.btn-default:hover,
+.section-blue .btn.btn-default:active,
+body>section.section-body #about .btn.btn-default:hover,
+body>section.section-body #about .btn.btn-default:active {
+  background-color: white;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.jumbotron-slide .btn.btn-default:hover,
+.jumbotron-slide .btn.btn-default:active,
+.section-header .btn.btn-default:hover,
+.section-header .btn.btn-default:active,
+body>section.section-body #about .btn.btn-default:hover,
+body>section.section-body #about .btn.btn-default:active {
+  color: #777;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default {
+  border-color: #ccc;
+  color: #333;
+  background-color: white;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default:hover,
+body>section.section-body .btn.btn-default:active {
+  color: white;
+  background-color: #ccc;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default.btn-maroon {
+  border-color: #601418;
+  color: #601418;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default.btn-maroon:hover,
+body>section.section-body .btn.btn-default.btn-maroon:active {
+  color: white;
+  background-color: #601418;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default.btn-blue {
+  border-color: #152c41;
+  color: #152c41;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+body>section.section-body .btn.btn-default.btn-blue:hover,
+body>section.section-body .btn.btn-default.btn-blue:active {
+  color: white;
+  background-color: #152c41;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.section-maroon .btn.btn-default:hover,
+.section-maroon .btn.btn-default:active {
+  color: #601418;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out; 
+}
+
+.section-blue .btn.btn-default:hover,
+.section-blue .btn.btn-default:active {
+  color: #152c41;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out; 
 }
 
 .ul-sections,
@@ -108,6 +276,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.section-body {
+  background-color: #fbfbfb;
+}
+
 /* HOME */
 
 .section-maroon {
@@ -149,6 +321,8 @@ h1 {
   background-color: #601418;
 }
 
+/*
 #registration {
   background-color: #152c41;
 }
+*/

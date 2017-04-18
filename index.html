@@ -17,6 +17,7 @@ dataAds:
     - text: "Register"
       url: 'site.urlRegForm'
       type: 'button'
+      target: '_blank'
  - image: "bg-pm.jpg"
    category: "Technical Course Programs"
    title: "Project Management"
@@ -30,22 +31,20 @@ dataAds:
     - text: "Register"
       url: 'site.urlRegForm'
       type: 'button'
+      target: '_blank'
  - image: "bg-hacking.jpg"
    category: "Technical Course Programs"
    title: "Ethical Hacking"
    copyPreTitle: "Coming Soon: New Course!"
    description: "This course will introduce students to the basics of website application, penetration testing, and bug bounty hunting."
    select:
-    - text: "More Info"
+    - text: "Our Other Courses"
       url:
        - 'site.baseurl'
        - "/courses#schedules"
-    - text: "Register"
-      url: 'site.urlRegForm'
-      type: 'button'
 ---
 
-<section><div class="slick-jumbotron">
+<section class="section-jumbotron"><div class="slick-jumbotron">
 
   {% for eachad in page.dataAds %}
 
@@ -53,12 +52,12 @@ dataAds:
     <span class="span-category">{{ eachad.category }}</span>
     {% if eachad.copyPreTitle %}<span class="span-copy">{% for eachcopy in eachad.copyPreTitle %}{{ eachcopy }}{% if forloop.last == false %}<br class="visible-lg visible-md"/>{% endif %}{% endfor %}</span>{% endif %}
     <span class="span-title">{{ eachad.title }}</span>
-    {% if eachad.copyPostTitle %}<span class="span-copy">{% for eachcopy in eachad.copyPostTitle %}{{ eachcopy }}{% if forloop.last == false %}<br class="visible-lg visible-md"/>{% endif %}{% endfor %}</span>{% endif %}
+    {% if eachad.copyPostTitle %}<span class="span-copy">{% for eachcopy in eachad.copyPostTitle %}{{ eachcopy }} {% if forloop.last == false %}<br class="visible-lg visible-md"/>{% endif %}{% endfor %}</span>{% endif %}
     <p>{{ eachad.description }}</p>
     {% if eachad.select %}
     <ul class="ul-jumbotron-slide">
       {% for eachselect in eachad.select %}
-      <li><a href="{% for eachurl in eachselect.url %}{% if eachurl == 'site.baseurl' %}{{ site.baseurl }}{% elsif eachurl == 'site.urlRegForm' %}{{ site.urlRegForm }}{% else %}{{ eachurl }}{% endif %}{% endfor %}"{% if eachselect.type == 'button' %}class="btn btn-default"{% endif %}>{{ eachselect.text }}</a></li>
+      <li><a href="{% for eachurl in eachselect.url %}{% if eachurl == 'site.baseurl' %}{{ site.baseurl }}{% elsif eachurl == 'site.urlRegForm' %}{{ site.urlRegForm }}{% else %}{{ eachurl }}{% endif %}{% endfor %}"{% if eachselect.type == 'button' %} class="btn btn-default"{% endif %}{% if eachselect.target %} target="{{ eachselect.target }}"{% endif %}>{{ eachselect.text }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -68,7 +67,7 @@ dataAds:
 
 </div></section>
 
-<section>
+<section class="section-body">
 
   {% if site.switchBlog == true %}
   <section id="blog" class="section-home section-home-news">
@@ -252,7 +251,7 @@ dataAds:
 
   </section>
 
-  <section id="about" class="section-home section-home-about">
+  <section id="about" class="section-home section-home-about section-bgimage">
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"><div>
       <span class="span-tagline">Making IT Happen</span>
       <p>The UP System Information Technology Foundation (UPSITF), Inc. is a
