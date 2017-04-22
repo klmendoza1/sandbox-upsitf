@@ -843,7 +843,7 @@ footer ul {
 @media (min-width: 768px) and (max-width: 992px) {
   .table-shortcourses>thead>tr:first-child>th:nth-child(3),
   .table-shortcourses>tbody>tr>td:nth-child(3) {
-      width: 220px;
+      width: 225px;
   }
 }
 
