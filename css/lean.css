@@ -753,6 +753,10 @@ footer ul {
   margin-bottom: 5px;
 }
 
+.div-trainings-main-unit {
+  margin-bottom: 15px;
+}
+
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image {
   display: inline-block;
   width: 100px;
@@ -765,6 +769,10 @@ footer ul {
   margin-bottom: 5px;
   border-radius: 100px;
   background-color: #333;
+}
+
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image img {
+  margin-bottom: 6px;
 }
 
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register {
@@ -790,9 +798,15 @@ footer ul {
 .div-trainings-main-unit-content.div-trainings-main-unit-content-text h4 small {
   display: block;
   margin-top: 3px;
+  font-style: italic;
 }
 
 .div-trainings-main-unit-content.div-trainings-main-unit-content-text>span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.span-dates-details {
   display: block;
 }
 
@@ -813,12 +827,30 @@ footer ul {
   border-width: 1px 0 1px 0;
 }
 
-/*
-.table-shortcourses colgroup col:nth-child(1) {width: calc(((100% - (90.5px + 45px)) / 3) + 7.5px);}
-.table-shortcourses colgroup col:nth-child(2) {width: calc(((100% - (90.5px + 45px)) / 3) + 15px);}
-.table-shortcourses colgroup col:nth-child(3) {width: calc(((100% - (90.5px + 45px)) / 3) + 22.5px);}
-.table-shortcourses colgroup col:last-child {width: 90.5px;}
-*/
+.table-shortcourses {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-shortcourses>thead>tr:first-child>th:first-child {
+  /*width: calc(100% - 97.5px);*/
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .table-shortcourses>thead>tr:first-child>th:nth-child(3),
+  .table-shortcourses>tbody>tr>td:nth-child(3) {
+      width: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-shortcourses>thead>tr>th:last-child,
+  .table-shortcourses>tbody>tr>td:last-child {
+      width: 97.5px;
+  }
+}
+
 
 @media (min-width: 768px) {
 
@@ -829,11 +861,6 @@ footer ul {
 
 }
 
-/*
-.table-shortcourses colgroup col:nth-child(4) {
-  width: 78px;
-}
-*/
 
 .table-shortcourses thead {
   border-style: solid;
@@ -846,18 +873,46 @@ footer ul {
 
 @media (min-width: 768px) {
 
-.table-shortcourses tbody tr td {
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
+  .table-shortcourses tbody tr td {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+  }
+
+  .table-shortcourses tbody tr:first-child td {
+    padding-top: 15px;
+  }
+
+  .table-shortcourses tbody tr:last-child td {
+    padding-bottom: 15px;
+  }
+
 }
 
-.table-shortcourses tbody tr:first-child td {
-  padding-top: 15px;
+@media (max-width: 768px) {
+  .table-shortcourses>tbody>tr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    width: calc(100% + 45px);
+  }
+  .table-shortcourses>tbody>tr:first-child {
+    margin-top: 15px;
+  }
+  .table-shortcourses>tbody>tr:last-child {
+    margin-bottom: 15px;
+  }
 }
 
-.table-shortcourses tbody tr:last-child td {
-  padding-bottom: 15px;
-}
+
+@media (max-width: 768px) {
+
+  .table-shortcourses {
+    table-layout: auto;
+  }
+
+  .table-shortcourses>tbody>tr,
+  .table-shortcourses tbody tr td {
+    display: block !important;
+  }
 
 }
 
@@ -867,24 +922,26 @@ footer ul {
 
 
 .table-shortcourses tbody tr td:nth-child(1) {
-  width: calc(((100% - (110px + 45px)) / 3) + 7.5px);
+  /*width: calc(((100% - (110px + 45px)) / 3) + 7.5px);*/
+  /*padding-left: 15px;*/
   padding-right: 7.5px;
 }
 
 .table-shortcourses tbody tr td:nth-child(2) {
-  width: calc(((100% - (110px + 45px)) / 3) + 15px);
+  /*width: calc(((100% - (110px + 45px)) / 3) + 15px);*/
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
 
 .table-shortcourses tbody tr td:nth-child(3) {
-  width: calc(((100% - (110px + 45px)) / 3) + 22.5px);
+  /*width: calc(((100% - (110px + 45px)) / 3) + 22.5px);*/
   padding-left: 7.5px;
-  padding-right: 15px;
+  padding-right: 7.5px;
 }
 
 .table-shortcourses tbody tr td:last-child {
-  min-width: 110px;
+  min-width: 97.5px;
+  padding-left: 7.5px;
 }
 
 .table-shortcourses tbody tr td:last-child .btn-register {

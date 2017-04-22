@@ -315,10 +315,103 @@ body>section.section-body .btn.btn-default.btn-blue:active {
   background-color: #601418;
 }
 
+.a-panel-service {
+  
+}
+
+.a-panel-service:hover .panel.panel-service,
+.a-panel-service:focus .panel.panel-service {
+  background-color: white;
+}
+
+.panel.panel-service {
+  background-color: transparent;
+  border-radius: 0;
+  border-color: white;
+  border-width: 3px;
+}
+
+
+
 /* COURSES */
 
 #offerings {
   background-color: #601418;
+}
+
+.span-dates {
+  font-weight: bold;
+}
+
+.span-dates-details {
+  font-weight: initial;
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.span-rate {
+  font-size: 0.9em;
+}
+
+.span-rate>span {
+  font-weight: bold;
+}
+
+.span-rate.span-rate-earlybird ul {
+  margin-left: 15px;
+}
+
+.table-shortcourses thead .btn.btn-default {
+  width: 45px;
+  text-align: center;
+  padding-right: 9px;
+  padding-left: 12px;
+  /* border: 0; */
+  /* border-radius: 45px; */
+  height: 45px;
+  font-size: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  background-color: transparent !important;
+}
+
+.table-shortcourses thead .btn.btn-default:hover,
+.table-shortcourses thead .btn.btn-default:focus,
+.table-shortcourses thead .btn.btn-default:active {
+  color: #333 !important;
+}
+
+.table-shortcourses thead .btn.btn-default:focus {
+  box-shadow: none;
+}
+
+.div-offerings h3 {
+  margin-bottom: 10px;
+}
+
+.div-offerings ul {
+  margin-left: 15px;
+}
+
+.div-offerings li {
+  margin-bottom: 3px;
+}
+
+.div-offerings li a:not(.inactive):hover,
+.div-offerings li a:not(.inactive):focus,
+.div-offerings li a:not(.inactive):active {
+  color: white;
+  text-decoration: underline;
+}
+
+.div-offerings li a.inactive,
+.div-offerings li a.inactive:hover,
+.div-offerings li a.inactive:focus,
+.div-offerings li a.inactive:active {
+  color: #808080 !important;
+  pointer-events: none;
+  cursor: default;
 }
 
 /*
