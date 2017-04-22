@@ -6,9 +6,9 @@
     {% if page.switchFillers == true %}
     <div class="filler"></div>
     {% else %}
-    <img>
+    <img src="{{ site.baseurl }}/images/icons/{% if eachitemincategory.icon == "" %}art_icon-filler-full.png{% else %}{{ eachitemincategory.icon }}{% endif %}">
     {% endif %}
-    {% if eachitemincategory.file %}<a href="{{ site.baseurl }}{{ eachitemincategory.file }}" target="_blank">View Syllabus</a>{% endif %}
+    {% if eachitemincategory.file and eachitemincategory.file != "" %}<a href="{{ site.baseurl }}/files/syllabus/{{ eachcategory.id }}/{{ eachitemincategory.file }}" target="_blank">View Syllabus</a>{% endif %}
     <a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register">Register</a>
   </div>
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-text">

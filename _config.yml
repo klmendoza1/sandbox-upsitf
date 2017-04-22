@@ -1,6 +1,8 @@
 # Site data
 
-title: UPSITF
+title: "UP System Information Technology Foundation"
+titleAlt: "UPSITF"
+
 
 baseurl: http://toffmendoza.me/sandbox-upsitf
 #baseurl: http://upsitf.org/

@@ -1,7 +1,9 @@
 ---
+title: "Courses"
 layout: main
 
-switchFillers: true
+switchFillers: false
+switchCoursesMulticol: false
 
 imageHeader: "bg-courses.jpg"
 
@@ -22,7 +24,6 @@ dataShortCoursesSAMPLE:
 
 dataShortCoursesConfirmedTrainings:
  - id: "android"
-   categoryId: "sda"   #string
    days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -33,7 +34,6 @@ dataShortCoursesConfirmedTrainings:
    rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
  - id: "dbs"
-   categoryId: "dbtech"   #string
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -44,7 +44,6 @@ dataShortCoursesConfirmedTrainings:
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
  - id: "python"
-   categoryId: "programming"        #string
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                     #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -55,7 +54,6 @@ dataShortCoursesConfirmedTrainings:
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
  - id: "phpmysqlfund"
-   categoryId: "webtech"   #string
    days: "Two (2)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                    #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -68,7 +66,6 @@ dataShortCoursesConfirmedTrainings:
 
 dataShortCoursesTechiesChoice:
  - id: "smtrading"
-   categoryId: "special"            #string
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -276,7 +273,7 @@ dataShortCoursesOthers:
    rateRegular: "24,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
- - id: "linuxsysad101"          #string
+ - id: "linux101"          #string
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -286,17 +283,17 @@ dataShortCoursesOthers:
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
- - id: "linuxsysad102"          #string
+ - id: "linux102"          #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
- - id: "linuxsysad201"          #string
+ - id: "linux201"          #string
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
- - id: "linuxsysad202"          #string
+ - id: "linux202"          #string
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
@@ -310,7 +307,7 @@ dataShortCoursesOthers:
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
- - id: "pm"          #string
+ - id: "itpm"          #string
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -333,132 +330,156 @@ dataCourseOfferings:
    list:
     - name: "C Programming"
       id: "cprog"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - C Programming.pdf"
     - name: "C++ Programming"
       id: "cppprog"
+      icon: ""
       file: ""
     - name: "Introduction to Visual Basic .NET"
       id: "vbnet"
-      file: ""
-    - name: "C# Programming Using MS.NET"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to Visual Basic .NET.pdf"
+    - name: "Introduction to C# Programming Using MS.NET"
       id: "chashprog"
-      file: ""
-    - name: "Java Programming I (Basic)"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to C Hash Programming Using MS.NET.pdf"
+    - name: "Introduction to Programming Using Java I (Basic)"
       id: "java1"
-      file: ""
-    - name: "Java Programming II (Intermediate)"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Java 1.pdf"
+    - name: "Introduction to Programming Using Java II (Intermediate)"
       id: "java2"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Java 2.pdf"
     - name: "Java EE"
       id: "javaee"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Java EE.pdf"
     - name: "Python (Integrated with Django Web Framework)"
       id: "python"
-      file: ""
+      icon: "art_icon-python-full.png"
+      file: "UPSITF TCP Syllabus - Python.pdf"
  - name: "Software Development and Applications"
    id: "sda"
    list:
-    - name: "Introduction to Android Application Development"
+    - name: "Introduction to Android Applications"
       id: "android"
-      file: ""
+      icon: "art_icon-android-full.png"
+      file: "UPSITF TCP Syllabus - Introduction to Android Applications.pdf"
     - name: "iOS Application Development"
       id: "ios"
-      file: ""
-    - name: "Object-Oriented Analysis and Design Using UML"
-      id: "uml"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - iOS Application Development.pdf"
     - name: "Software Engineering"
       id: "sengg"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Engineering.pdf"
     - name: "Software Testing"
       id: "stesting"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Testing.pdf"
     - name: "Software Quality Assurance (SQA)"
       id: "sqa"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Quality Assurance.pdf"
  - name: "Web Technology"
    id: "webtech"
    list:
     - name: "Introduction to ASP.NET Programming"
       id: "aspnet"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to ASP.NET Programming.pdf"
     - name: "Web Development Using HTML and CSS"
       id: "webdev"
       file: ""
+      icon: ""
     - name: "PHP and MySQL Fundamentals"
       id: "phpmysqlfund"
-      file: ""
+      icon: "art_icon-phpmysql-full.png"
+      file: "UPSITF TCP Syllabus - PHP and MySQL Fundamentals.pdf"
     - name: "Advanced PHP and MySQL"
       id: "phpmysqladv"
-      file: ""
-    - name: "Search Engine Optimization"
+      icon: "art_icon-phpmysql-full.png"
+      file: "UPSITF TCP Syllabus - Advanced PHP and MySQL.pdf"
+    - name: "Search Engine Optimization (SEO)"
       id: "seo"
+      icon: ""
       file: ""
  - name: "Database Technology"
    id: "dbtech"
    list:
     - name: "Introduction to Database Systems"
       id: "dbs"
-      file: ""
+      icon: "art_icon-db-full.png"
+      file: "UPSITF TCP Syllabus - Introduction to Database Systems.pdf"
     - name: "Fundamentals of Oracle SQL"
       id: "oraclesql"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Fundamentals of Oracle SQL.pdf"
     - name: "Introduction to Oracle PL/SQL"
       id: "oracleplsql"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to Oracle PL SQL.pdf"
  - name: "Network Technology"
    id: "networktech"
    list:
     - name: "CCNA 1: Network Fundamentals"
       id: "ccna1"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - CCNA 1.pdf"
     - name: "CCNA 2: Routing Protocols and Concepts"
       id: "ccna2"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - CCNA 2.pdf"
     - name: "CCNA 3: LAN Switching and Wireless"
       id: "ccna3"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - CCNA 3.pdf"
     - name: "CCNA 4: Accessing the WAN"
       id: "ccna4"
-      file: ""
-    - name: "Linux Essentials"
-      id: "linux"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - CCNA 4.pdf"
     - name: "Linux System Administration 101"
-      id: "linuxsysad101"
-      file: ""
+      id: "linux101"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 101.pdf"
     - name: "Linux System Administration 102"
-      id: "linuxsysad102"
-      file: ""
+      id: "linux102"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 102.pdf"
     - name: "Linux System Administration 201"
-      id: "linuxsysad201"
-      file: ""
+      id: "linux201"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 201.pdf"
     - name: "Linux System Administration 202"
-      id: "linuxsysad202"
-      file: ""
-    - name: "I.T. Security Analysis"
+      id: "linux202"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 202.pdf"
+    - name: "IT Security Analysis"
       id: "itsec"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - IT Security Analysis.pdf"
  - name: "Business Processes"
-   id: "businessprocesses"
+   id: "busproc"
    list:
-    - name: "Project Management"
-      id: "pm"
-      file: ""
-    - name: "Educational Technology 101"
-      id: "edtech"
-      file: ""
+    - name: "IT Project Management"
+      id: "itpm"
+      icon: ""
+      file: "UPSITF TCP Syllabus - IT Project Management.pdf"
  - name: "Systems Analysis and Design"
-   id: "systemsanalysis"
+   id: "sad"
    list:
     - name: "Systems Analysis and Design (SAD)"
       id: "sad"
-      file: ""
+      icon: ""
+      file: "UPSITF TCP Syllabus - System Analysis and Design.pdf"
  - name: "Special Courses"
    id: "special"
    list:
     - name: "Stock Market Trading Course: Technical Analysis"
       id: "smtrading"
+      icon: ""
       file: ""
 
 dataCourseOfferingsLegacy:
@@ -479,6 +500,9 @@ dataCourseOfferingsLegacy:
    list:
     - name: "Computer Literacy"
       id: "complit"
+      file: ""
+    - name: "Educational Technology 101"
+      id: "edtech"
       file: ""
 
 dataRegistration: 1
@@ -519,6 +543,8 @@ dataRegistration: 1
         <h2>Schedules &amp; Rates</h2>
 
         <h3>Confirmed Trainings</h3>
+        {% if switchCoursesMulticol == true %}
+        
         <div class="div-trainings-main multicol multicol-lg-2 multicol-md-2 multicol-sm-2">
 
           {% for eachitem in page.dataShortCoursesConfirmedTrainings %}
@@ -526,6 +552,28 @@ dataRegistration: 1
           {% endfor %}
 
         </div>
+
+        {% else %}
+
+        {% for eachitem in page.dataShortCoursesConfirmedTrainings %}
+
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        
+        {% if thecycle == 'odd' %}
+        <div class="row">
+        {% endif %}
+        
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        {% include unit-shortcourse.html %}
+        </div>
+
+        {% if thecycle == 'even' or forloop.last == true %}
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
+        {% endif %}
 
         <h3>Techie's Choice</h3>
         <div class="div-trainings-main multicol multicol-lg-2 multicol-md-2 multicol-sm-2">
@@ -579,7 +627,7 @@ dataRegistration: 1
             <tr>
               <td>
                 {% if eachitemincategory.name %}<h5>{{ eachitemincategory.name }}</h5>{% endif %}
-                {% if eachitemincategory.file %}<a href="{{ site.baseurl }}{{ eachitemincategory.file }}">View Syllabus</a>{% endif %}
+                {% if eachitemincategory.file and eachitemincategory.file != "" %}<a href="{{ site.baseurl }}/files/syllabus/{{ eachcategory.id }}/{{ eachitemincategory.file }}" target="_blank">View Syllabus</a>{% endif %}
               </td>
               <td>
                 <span>
@@ -707,7 +755,7 @@ dataRegistration: 1
             <h3>{{ eachgroup.name }}</h3>
             <ul>
             {% for eachcourse in eachgroup.list %}
-              <li><a{% if eachcourse.file %} href="{{ site.baseurl }}{{ eachcourse.file }}"{% endif %}>{{ eachcourse.name }}</a></li>
+              <li><a{% if eachcourse.file and eachcourse.file != "" %} href="{{ site.baseurl }}/files/syllabus/{{ eachgroup.id }}/{{ eachcourse.file }}" target="_blank"{% else %} class="inactive"{% endif %}>{{ eachcourse.name }}</a></li>
             {% endfor %}
             </ul>
           </div>
