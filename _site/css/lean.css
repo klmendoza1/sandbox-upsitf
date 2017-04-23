@@ -218,7 +218,7 @@ p {
 }
 
 .section-header+section>section:first-child {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .section-header+section>section:last-child {
@@ -246,6 +246,7 @@ ul {
 .ul-home-about li {
   display: inline-block;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .ul-sections li:last-child,
@@ -992,12 +993,25 @@ footer ul {
   margin-bottom: 0;
 }
 
+.div-faq li {
+  margin-bottom: 15px;
+}
+
+.div-faq li:last-child {
+  margin-bottom: 0;
+}
+
+.div-faq li>p:first-child {
+  font-weight: bold;
+  margin: 0;
+}
+
 .div-registration {
   margin-top: 20px;
 }
 
 .div-registration>div>div {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 /*
