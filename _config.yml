@@ -16,13 +16,19 @@ headerDropdown: false
 
 switchBlog: false
 
+urlRegForm: "http://bit.ly/upsitf-register"
+urlRegFormLegacy: "https://sitf.typeform.com/to/tXnMb4"
 
-urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
-urlY4iT: "http://y4it.org"
-urlTBC4K: "http://tbc4k.upsitf.org"
-
-urlFacebook: "https://www.facebook.com/upsitf.org/"
+urlFacebook: "https://www.facebook.com/upsitf.org"
 urlTwitter: "https://twitter.com/upsitf"
+
+urlY4iT: "http://y4it.org"
+urlY4iTFacebook: "https://facebook.com/ilove.Y4iT"
+urlY4iTTwitter: "https://twitter.com/y4it"
+urlY4iTInstagram: "https://instagram.com/y4it"
+
+urlTBC4K: "http://tbc4k.upsitf.org"
+urlTBC4KFacebook: "https://facebook.com/tbc4k"
 
 contactAddress:
  - "Rm. 303 Vidal Tan Hall"

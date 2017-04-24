@@ -5,7 +5,7 @@ layout: main
 switchFillers: false
 switchCoursesMulticol: false
 
-imageHeader: "bg-courses.jpg"
+imageHeader: "photo_bg-cover-courses.jpg"
 
 dataShortCoursesSAMPLE:
  - id: "aspnet"
@@ -24,6 +24,7 @@ dataShortCoursesSAMPLE:
 
 dataShortCoursesConfirmedTrainings:
  - id: "android"
+   status: "Ongoing"
    days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -66,6 +67,7 @@ dataShortCoursesConfirmedTrainings:
 
 dataShortCoursesTechiesChoice:
  - id: "smtrading"
+   status: "Postponed"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
@@ -508,7 +510,7 @@ dataRegistration: 1
 ---
 
 
-<section class="section-header" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('{{ site.baseurl }}/images/headers/{{ page.imageHeader }}')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
+<section class="section-header" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('{{ site.baseurl }}/images/covers/{{ page.imageHeader }}')"><div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-12">
 
   <h1>Technical Course Programs</h1>
 
@@ -921,14 +923,14 @@ dataRegistration: 1
           </div>
 
           <div class="multicol-unit">
-            <div class="panel">
+            <div class="panel panel-cta">
               <!--form-->
                 <h3>Are you ready?</h3>
-                <p>Make sure that lorem ipsum dolor sit amet.</p>
+                <p>Make sure that you have read and understood our registration guidelines and that your requirements are ready before filling out our registration form.</p>
                 <!--div class="checkbox"><label><input type="checkbox"> I have read and understood
                     lorem ipsum dolor sit amet.</label></div-->
                 <!--button type="submit" class="btn btn-default">Register</button-->
-                <a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default">Register Now</a>
+                <a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register">Register Now</a>
               <!--/form-->
             </div>
           </div>

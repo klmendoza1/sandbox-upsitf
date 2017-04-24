@@ -160,31 +160,35 @@ body>section.section-body #about .btn.btn-default {
 body>section.section-body #about .btn.btn-default:hover,
 body>section.section-body #about .btn.btn-default:active {
   background-color: white;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 .jumbotron-slide .btn.btn-default:hover,
 .jumbotron-slide .btn.btn-default:active,
+.jumbotron-slide .btn.btn-default:focus,
 .section-header .btn.btn-default:hover,
 .section-header .btn.btn-default:active,
+.section-header .btn.btn-default:focus,
 body>section.section-body #about .btn.btn-default:hover,
-body>section.section-body #about .btn.btn-default:active {
+body>section.section-body #about .btn.btn-default:active,
+body>section.section-body #about .btn.btn-default:focus {
   color: #777;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 body>section.section-body .btn.btn-default {
   border-color: #ccc;
   color: #333;
   background-color: white;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 body>section.section-body .btn.btn-default:hover,
-body>section.section-body .btn.btn-default:active {
+body>section.section-body .btn.btn-default:active,
+body>section.section-body .btn.btn-default:focus {
   color: white;
   background-color: #ccc;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 body>section.section-body .btn.btn-default.btn-maroon {
@@ -194,7 +198,8 @@ body>section.section-body .btn.btn-default.btn-maroon {
 }
 
 body>section.section-body .btn.btn-default.btn-maroon:hover,
-body>section.section-body .btn.btn-default.btn-maroon:active {
+body>section.section-body .btn.btn-default.btn-maroon:active,
+body>section.section-body .btn.btn-default.btn-maroon:focus {
   color: white;
   background-color: #601418;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
@@ -207,20 +212,23 @@ body>section.section-body .btn.btn-default.btn-blue {
 }
 
 body>section.section-body .btn.btn-default.btn-blue:hover,
-body>section.section-body .btn.btn-default.btn-blue:active {
+body>section.section-body .btn.btn-default.btn-blue:active,
+body>section.section-body .btn.btn-default.btn-blue:focus {
   color: white;
   background-color: #152c41;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .section-maroon .btn.btn-default:hover,
-.section-maroon .btn.btn-default:active {
+.section-maroon .btn.btn-default:active,
+.section-maroon .btn.btn-default:focus {
   color: #601418;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out; 
 }
 
 .section-blue .btn.btn-default:hover,
-.section-blue .btn.btn-default:active {
+.section-blue .btn.btn-default:active,
+.section-blue .btn.btn-default:focus {
   color: #152c41;
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out; 
 }
@@ -241,10 +249,13 @@ body>section.section-body .btn.btn-default.btn-blue:active {
 }
 
 .ul-sections li a:hover,
+.ul-sections li a:active,
 .ul-sections li a:focus,
 .ul-jumbotron-slide li a:not(.btn):hover,
+.ul-jumbotron-slide li a:not(.btn):active,
 .ul-jumbotron-slide li a:not(.btn):focus,
 .ul-home-about li a:hover:not(.btn),
+.ul-home-about li a:active:not(.btn),
 .ul-home-about li a:focus:not(.btn) {
   -webkit-transition: 250ms ease-out;
   -moz-transition: 250ms ease-out;
@@ -311,25 +322,71 @@ body>section.section-body .btn.btn-default.btn-blue:active {
   color: white;
 }
 
+.section-home.section-home-shortcourses .btn-register {
+  margin-bottom: 15px;
+}
+
 #services {
   background-color: #601418;
 }
 
-.a-panel-service {
-  
-}
-
-.a-panel-service:hover .panel.panel-service,
-.a-panel-service:focus .panel.panel-service {
-  background-color: white;
-}
-
-.panel.panel-service {
-  background-color: transparent;
+.a-panel-service .panel.panel-service {
   border-radius: 0;
   border-color: white;
   border-width: 3px;
+  background-color: transparent;
+  -webkit-transition: background-color 250ms ease-out;
+  -moz-transition: background-color 250ms ease-out;
+  -o-transition: background-color 250ms ease-out;
+  transition: background-color 250ms ease-out;
 }
+
+.a-panel-service:hover .panel.panel-service,
+.a-panel-service:focus .panel.panel-service,
+.a-panel-service:active .panel.panel-service {
+  background-color: white;
+  -webkit-transition: background-color 250ms ease-out;
+  -moz-transition: background-color 250ms ease-out;
+  -o-transition: background-color 250ms ease-out;
+  transition: background-color 250ms ease-out;
+}
+
+.a-panel-service .panel.panel-service h2,
+.a-panel-service .panel.panel-service h2 small,
+.a-panel-service .panel.panel-service p {
+  color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.a-panel-service:hover .panel.panel-service h2,
+.a-panel-service:focus .panel.panel-service h2,
+.a-panel-service:active .panel.panel-service h2,
+.a-panel-service:hover .panel.panel-service h2 small,
+.a-panel-service:focus .panel.panel-service h2 small,
+.a-panel-service:active .panel.panel-service h2 small {
+  color: #601418;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+.a-panel-service:hover .panel.panel-service p,
+.a-panel-service:focus .panel.panel-service p,
+.a-panel-service:active .panel.panel-service p {
+  color: #333;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.panel.panel-events-unit {
+  background: linear-gradient(#333,#2b2b2b);
+}
+
 
 
 
@@ -337,6 +394,34 @@ body>section.section-body .btn.btn-default.btn-blue:active {
 
 #offerings {
   background-color: #601418;
+}
+
+.section-home.section-home-shortcourses .btn-register,
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register,
+.table-shortcourses tbody tr td:last-child .btn-register,
+.panel-cta .btn-register {
+  background-color: transparent !important;
+}
+
+.section-home.section-home-shortcourses .btn-register:hover,
+.section-home.section-home-shortcourses .btn-register:focus,
+.section-home.section-home-shortcourses .btn-register:active,
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register:hover,
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register:focus,
+.div-trainings-main-unit-content.div-trainings-main-unit-content-image .btn-register:active,
+.table-shortcourses tbody tr td:last-child .btn-register:hover,
+.table-shortcourses tbody tr td:last-child .btn-register:focus,
+.table-shortcourses tbody tr td:last-child .btn-register:active,
+.panel-cta .btn-register:hover,
+.panel-cta .btn-register:focus,
+.panel-cta .btn-register:active {
+  color: white !important;
+  background-color: #bc1116 !important;
+  border-color: #bc1116 !important;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 .span-dates {
@@ -347,6 +432,17 @@ body>section.section-body .btn.btn-default.btn-blue:active {
   font-weight: initial;
   font-size: 0.75em;
   font-style: italic;
+}
+
+.span-dates-status {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #bc1116;
+  color: white;
+  padding: 1px 3px 0px 3px;
+  font-size: 0.75em;
+  vertical-align: top;
+  margin-top: 1px;
 }
 
 .span-rate {
@@ -414,8 +510,40 @@ body>section.section-body .btn.btn-default.btn-blue:active {
   cursor: default;
 }
 
+.panel-cta {
+  border-width: 3px;
+}
+
+.panel-cta h3 {
+  margin-bottom: 10px;
+}
+
 /*
 #registration {
   background-color: #152c41;
 }
 */
+
+/* FOOTER */
+footer a,
+footer a:link,
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a:visited {
+  color: white;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: underline;
+}
+
+footer ul {
+  font-size: 0.75em;
+}
+
+footer ul li {
+  padding-top: 7.5px;
+}

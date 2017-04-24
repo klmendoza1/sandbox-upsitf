@@ -5,6 +5,19 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/icons/apple-touch-icon.png?v=9BakOkeGe0">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/icons/favicon-32x32.png?v=9BakOkeGe0" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/icons/favicon-16x16.png?v=9BakOkeGe0" sizes="16x16">
+  <link rel="manifest" href="{{ site.baseurl }}/icons/manifest.json?v=9BakOkeGe0">
+  <link rel="mask-icon" href="{{ site.baseurl }}/icons/safari-pinned-tab.svg?v=9BakOkeGe0" color="#601418">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/icons/favicon.ico?v=9BakOkeGe0">
+  <meta name="apple-mobile-web-app-title" content="UPSITF">
+  <meta name="application-name" content="UPSITF">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/icons/mstile-144x144.png?v=9BakOkeGe0">
+  <meta name="msapplication-config" content="{{ site.baseurl }}/icons/browserconfig.xml?v=9BakOkeGe0">
+  <meta name="theme-color" content="#601418">
+
   <!-- Bootstrap -->
   <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
   {% include css-fonts.html %}

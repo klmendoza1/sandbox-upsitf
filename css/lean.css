@@ -217,6 +217,10 @@ p {
   padding-bottom: 60px;
 }
 
+.section-header+section>section:not(.section-maroon):not(.section-blue)+section:not(.section-maroon):not(.section-blue) {
+  padding-top: 0px;
+}
+
 .section-header+section>section:first-child {
   padding-top: 30px;
 }
@@ -632,25 +636,27 @@ footer ul {
 
 @media (min-width: 1200px) {
   .panel.panel-service {
-    min-height: 280px;
+    min-height: 306px;
   }
 }
 
 @media (min-width: 992px) {
   .panel.panel-service {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .panel.panel-service {
-    min-height: 410px;
+    min-height: 218px;
+    
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .panel.panel-service {
-    min-height: 195px;
+    min-height: 218px;
+    
   }
 }
 
@@ -705,12 +711,31 @@ footer ul {
 
 @media (min-width: 1200px) {
   .panel.panel-events-unit-content {
-    min-height: 240px;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .panel.panel-events-unit-content {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .panel.panel-events-unit-content {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel.panel-events-unit-content.panel-events-unit-content-image {
+    min-height: 360px;
   }
 }
 
 .panel.panel-events-unit-content.panel-events-unit-content-image {
   border-width: 0;
+  background-color: #777;
 }
 
 .panel.panel-events-unit-content.panel-events-unit-content-text {
@@ -755,7 +780,7 @@ footer ul {
 }
 
 .div-trainings-main-unit {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .div-trainings-main-unit-content.div-trainings-main-unit-content-image {
@@ -1010,7 +1035,7 @@ footer ul {
   margin-top: 20px;
 }
 
-.div-registration>div>div {
+.div-registration>div>div:not(.panel) {
   padding-bottom: 20px;
 }
 
@@ -1020,3 +1045,62 @@ footer ul {
   margin-bottom: 0;
 }
 */
+
+.img-responsive.img-display {
+  margin-top: 20px;
+}
+
+footer>div>div>div+div {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div+div {
+    text-align: center;
+  }  
+}
+
+@media (max-width: 992px) {
+  footer>div>div>div+div {
+    margin-top: 30px;
+  }  
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div:first-child {
+    margin-top: 15px;
+  }  
+  footer>div>div>div+div {
+    margin-top: 15px;
+  }  
+}
+
+@media (min-width: 768px) {
+  footer>div>div>div+div img {
+    float: right;
+    margin-right: 60px;
+    margin-left: 15px;
+  }  
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer>div>div>div+div img {
+    margin-right: 15px;
+  }  
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div+div img {
+    margin-bottom: 15px;
+  }  
+}
+
+footer>div>div>div+div img {
+  width: 60px;
+}
+
+footer>div>div>div+div span {
+  display: block;
+  color: white;
+  font-size: 0.75em;
+}
