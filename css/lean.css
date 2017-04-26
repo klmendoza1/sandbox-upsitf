@@ -84,6 +84,10 @@
 
 /* LAYOUT */
 
+.fa {
+  font-family: FontAwesome !important;
+}
+
 a, a *,
 a:link, a:link *,
 a:hover, a:hover *,

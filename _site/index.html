@@ -23,6 +23,7 @@
 
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <style>
 
 /* AVENIR NEXT */
@@ -185,19 +186,38 @@
 
   
 
-  <section id="shortcourses" class="section-home section-home-shortcourses">
+  <section id="sectionShortcourses" class="section-home section-home-shortcourses">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="shortcourses"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-        <h1>Tech Course Programs</h1>
-
         <div class="row">
 
           <div class="col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0">
-            <img>
+            <!--img-->
+
+            <div class="slick-courses" style="margin-left:auto;margin-right:auto;max-width:240px;margin-top:15px;margin-bottom:15px;">
+
+              
+              <div class=""><img class="img-responsive" src="/images/icons/full/art_icon-android-full.png"></div>
+              
+              <div class=""><img class="img-responsive" src="/images/icons/full/art_icon-db-full.png"></div>
+              
+              <div class=""><img class="img-responsive" src="/images/icons/full/art_icon-python-full.png"></div>
+              
+              <div class=""><img class="img-responsive" src="/images/icons/full/art_icon-phpmysql-full.png"></div>
+              
+
+            </div>
+
           </div>
           <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0">
+
+            <h1>Tech Course Programs</h1>
+
             <p>UPSITF offers a broad selection of courses designed to equip its
               participants a working set of IT skills that are responsive to the
               demands of time. These courses are modular, and the duration of
@@ -211,6 +231,7 @@
               <li>PHP and MySQL Fundamentals - starts on April 30, 2017</li>
             </ul>
 
+            <a class="btn btn-default" href="/courses">More Courses</a>
             <a class="btn btn-default btn-register" target="_blank" href="http://bit.ly/upsitf-register">Register</a>
           </div>
 
@@ -221,7 +242,10 @@
     </div></div>
   </section>
 
-  <section id="services" class="section-home section-home-services section-maroon">
+  <section id="sectionServices" class="section-home section-home-services section-maroon">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="services"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -266,7 +290,10 @@
     </div></div>
   </section>
 
-  <section id="events" class="section-home section-home-events">
+  <section id="sectionEvents" class="section-home section-home-events">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="events"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -324,7 +351,11 @@
 
   </section>
 
-  <section id="about" class="section-home section-home-about section-bgimage" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/covers/photo_bg-cover-about.jpg')">
+  <section id="sectionAbout" class="section-home section-home-about section-bgimage" style="background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('/images/covers/photo_bg-cover-about.jpg')">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="about"></a>
+
     <div class="container-fluid container-fluid-max"><div class="row"><div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"><div>
       <span class="span-tagline">Making IT Happen</span>
       <p>The UP System Information Technology Foundation (UPSITF), Inc. is a
@@ -418,6 +449,7 @@
 <script type="text/javascript" src="/js/smoothscroll.js"></script>
 
 <script>
+
 $(document).ready(function(){
   $('.slick-jumbotron').slick({
     slidesToScroll: 1,
@@ -430,6 +462,20 @@ $(document).ready(function(){
     arrows: false
   });
 });
+
+$(document).ready(function(){
+  $('.slick-courses').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+
 </script>
 
 <script>

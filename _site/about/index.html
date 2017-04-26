@@ -23,6 +23,7 @@
 
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <style>
 
 /* AVENIR NEXT */
@@ -139,34 +140,40 @@
 
 <section class="section-body">
 
-  <section id="tours"><div class="container-fluid container-fluid-max"><div class="row">
+  <section id="sectionContact">
 
-      <div class="col-lg-12">
-        <h2>Contact</h2>
-        <div class="row">
-          <div class="col-lg-8"><div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.0687813183213!2d121.06600961484088!3d14.652036989769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7658337d509%3A0xf1d6be4f301a2196!2sVidal+A.+Tan+Hall%2C+Quirino+Avenue%2C+Diliman%2C+Quezon+City%2C+1101+Metro+Manila!5e0!3m2!1sen!2sph!4v1481184262692" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
-          <div class="col-lg-4">
-            
-            <span>
-              Rm. 303 Vidal Tan Hall
-            <br/>
-            
-            
-              Quirino Ave. cor. Velasquez St.
-            <br/>
-            
-            
-              UP Diliman, Quezon City
-            </span>
-            
-            <span>Office Hours:
-              <span>Mon-Fri 9 AM - 5 PM</span>
-            </span>
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="contact"></a>
+
+    <div class="container-fluid container-fluid-max"><div class="row">
+
+        <div class="col-lg-12">
+          <h2>Contact</h2>
+          <div class="row">
+            <div class="col-lg-8"><div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 15px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.0687813183213!2d121.06600961484088!3d14.652036989769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7658337d509%3A0xf1d6be4f301a2196!2sVidal+A.+Tan+Hall%2C+Quirino+Avenue%2C+Diliman%2C+Quezon+City%2C+1101+Metro+Manila!5e0!3m2!1sen!2sph!4v1481184262692" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+            <div class="col-lg-4">
+              
+              <span>
+                Rm. 303 Vidal Tan Hall<br/>
+              
+              
+              
+                Quirino Ave. cor. Velasquez St.<br/>
+              
+              
+              
+                UP Diliman, Quezon City<br/>
+              </span>
+              
+              <span>Office Hours:
+                <span>Mon-Fri 9 AM - 5 PM</span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-  </div></div></section>
+    </div></div>
+  </section>
 
 </section>
 
@@ -246,6 +253,7 @@
 <script type="text/javascript" src="/js/smoothscroll.js"></script>
 
 <script>
+
 $(document).ready(function(){
   $('.slick-jumbotron').slick({
     slidesToScroll: 1,
@@ -258,6 +266,20 @@ $(document).ready(function(){
     arrows: false
   });
 });
+
+$(document).ready(function(){
+  $('.slick-courses').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+
 </script>
 
 <script>

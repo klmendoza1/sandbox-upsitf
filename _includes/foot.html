@@ -6,6 +6,7 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
 <script>
+
 $(document).ready(function(){
   $('.slick-jumbotron').slick({
     slidesToScroll: 1,
@@ -18,6 +19,20 @@ $(document).ready(function(){
     arrows: false
   });
 });
+
+$(document).ready(function(){
+  $('.slick-courses').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+
 </script>
 
 <script>

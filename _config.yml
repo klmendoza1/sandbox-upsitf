@@ -26,6 +26,8 @@ urlY4iT: "http://y4it.org"
 urlY4iTFacebook: "https://facebook.com/ilove.Y4iT"
 urlY4iTTwitter: "https://twitter.com/y4it"
 urlY4iTInstagram: "https://instagram.com/y4it"
+contactY4iTEmailInfo: "info@y4it.org"
+contactY4iTEmailMarketing: "marketing@y4it.org"
 
 urlTBC4K: "http://tbc4k.upsitf.org"
 urlTBC4KFacebook: "https://facebook.com/tbc4k"
@@ -37,6 +39,7 @@ contactAddress:
 contactHours:
  - "8am to 5pm"
 contactEmail: "info@upsitf.org"
+contactEmail: "marketing@upsitf.org"
 contactLandline: “(02) 436 2217”
 contactFax: “(02) 920 2036”
 contactMobile: “0917 563 5682”

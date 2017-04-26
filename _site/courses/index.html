@@ -23,6 +23,7 @@
 
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <style>
 
 /* AVENIR NEXT */
@@ -141,7 +142,10 @@
 
 <section class="section-body">
 
-  <section id="schedules">
+  <section id="sectionSchedules">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="schedules"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
 
@@ -166,7 +170,7 @@
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     
-    <img src="/images/icons/art_icon-android-full.png">
+    <img src="/images/icons/min/art_icon-android-full.png">
     
     <a href="/files/syllabus/sda/UPSITF TCP Syllabus - Introduction to Android Applications.pdf" target="_blank">View Syllabus</a>
     <a href="http://bit.ly/upsitf-register" target="_blank" class="btn btn-default btn-register">Register</a>
@@ -230,7 +234,7 @@
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     
-    <img src="/images/icons/art_icon-db-full.png">
+    <img src="/images/icons/min/art_icon-db-full.png">
     
     <a href="/files/syllabus/dbtech/UPSITF TCP Syllabus - Introduction to Database Systems.pdf" target="_blank">View Syllabus</a>
     <a href="http://bit.ly/upsitf-register" target="_blank" class="btn btn-default btn-register">Register</a>
@@ -298,7 +302,7 @@
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     
-    <img src="/images/icons/art_icon-python-full.png">
+    <img src="/images/icons/min/art_icon-python-full.png">
     
     <a href="/files/syllabus/programming/UPSITF TCP Syllabus - Python.pdf" target="_blank">View Syllabus</a>
     <a href="http://bit.ly/upsitf-register" target="_blank" class="btn btn-default btn-register">Register</a>
@@ -362,7 +366,7 @@
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     
-    <img src="/images/icons/art_icon-phpmysql-full.png">
+    <img src="/images/icons/min/art_icon-phpmysql-full.png">
     
     <a href="/files/syllabus/webtech/UPSITF TCP Syllabus - PHP and MySQL Fundamentals.pdf" target="_blank">View Syllabus</a>
     <a href="http://bit.ly/upsitf-register" target="_blank" class="btn btn-default btn-register">Register</a>
@@ -429,7 +433,7 @@
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
     
-    <img src="/images/icons/art_icon-filler-full.png">
+    <img src="/images/icons/min/art_icon-filler-full.png">
     
     
     <a href="http://bit.ly/upsitf-register" target="_blank" class="btn btn-default btn-register">Register</a>
@@ -6385,7 +6389,10 @@
 
   </section>
 
-  <section id="offerings" class="section-maroon">
+  <section id="sectionOfferings" class="section-maroon">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="offerings"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
 
@@ -6518,7 +6525,7 @@
         </div>
         <p>Note: If you see a course title on our Course Offerings that is not
           on our Schedules &amp; Rates, you may send us an inquiry e-mail at
-          <a href="mailto:info@upsitf.org?Subject=Inquiry%20on%20Courses">info@upsitf.org</a>. You may also call us at our landline no. 788 5898.</p>
+          <a href="mailto:marketing@upsitf.org?Subject=Inquiry%20on%20Courses">marketing@upsitf.org</a>. You may also call us at our landline no. 788 5898.</p>
 
       </div>
 
@@ -6528,7 +6535,10 @@
 
   </section>
 
-  <section id="registration">
+  <section id="sectionRegistration">
+
+    <!-- SECTION ID GOES HERE -->
+    <a class="anchor" id="registration"></a>
 
     <div class="container-fluid container-fluid-max"><div class="row">
 
@@ -6828,6 +6838,7 @@
 <script type="text/javascript" src="/js/smoothscroll.js"></script>
 
 <script>
+
 $(document).ready(function(){
   $('.slick-jumbotron').slick({
     slidesToScroll: 1,
@@ -6840,6 +6851,20 @@ $(document).ready(function(){
     arrows: false
   });
 });
+
+$(document).ready(function(){
+  $('.slick-courses').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
+    arrows: false
+  });
+});
+
 </script>
 
 <script>
