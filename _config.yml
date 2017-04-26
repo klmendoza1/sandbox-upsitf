@@ -15,6 +15,7 @@ permalink: pretty
 headerDropdown: false
 
 switchBlog: false
+switchAnchorSlash: true
 
 urlRegForm: "http://bit.ly/upsitf-register"
 urlRegFormLegacy: "https://sitf.typeform.com/to/tXnMb4"

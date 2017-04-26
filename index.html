@@ -14,7 +14,9 @@ dataAds:
     - text: "More Info"
       url:
        - 'site.baseurl'
-       - "/courses#schedules"
+       - "/courses"
+       - "#"
+       - "schedules"
     - text: "Our Other Courses"
       url:
        - 'site.baseurl'
@@ -32,7 +34,9 @@ dataAds:
     - text: "More Info"
       url:
        - 'site.baseurl'
-       - "/courses#schedules"
+       - "/courses"
+       - "#"
+       - "schedules"
     - text: "Our Other Courses"
       url:
        - 'site.baseurl'
@@ -72,7 +76,7 @@ photosCourses:
     {% if eachad.select %}
     <ul class="ul-jumbotron-slide">
       {% for eachselect in eachad.select %}
-      <li><a href="{% for eachurl in eachselect.url %}{% if eachurl == 'site.baseurl' %}{{ site.baseurl }}{% elsif eachurl == 'site.urlRegForm' %}{{ site.urlRegForm }}{% else %}{{ eachurl }}{% endif %}{% endfor %}"{% if eachselect.type == 'button' %} class="btn btn-default"{% endif %}{% if eachselect.target %} target="{{ eachselect.target }}"{% endif %}>{{ eachselect.text }}</a></li>
+      <li><a href="{% for eachurl in eachselect.url %}{% if eachurl == 'site.baseurl' %}{{ site.baseurl }}{% elsif eachurl == 'site.urlRegForm' %}{{ site.urlRegForm }}{% elsif eachurl == '#' %}{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}{{ eachurl }}{% else %}{{ eachurl }}{% endif %}{% endfor %}"{% if eachselect.type == 'button' %} class="btn btn-default"{% endif %}{% if eachselect.target %} target="{{ eachselect.target }}"{% endif %}>{{ eachselect.text }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -190,7 +194,7 @@ photosCourses:
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h1>Other Services</h1>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services#cct"><div class="panel panel-service">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#cct"><div class="panel panel-service">
         <h2>
           CCT
           <small>Corporate Customized Training</small>
@@ -198,7 +202,7 @@ photosCourses:
         <p>UPSITF customizes its training modules according to the needs of its
           clients and partners.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services#tbc4k"><div class="panel panel-service">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#tbc4k"><div class="panel panel-service">
         <h2>
           TBC4K
           <small>Tech Boot Camp for Kids + Teens</small>
@@ -207,7 +211,7 @@ photosCourses:
           especially designed for kids and teens, including Robotics,
           Programming, Digital Arts, Blogging, and many more.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services#ict4d"><div class="panel panel-service">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#ict4d"><div class="panel panel-service">
         <h2>
           ICT4D
           <small>ICT for Development</small>
@@ -216,7 +220,7 @@ photosCourses:
           aims to engage government, IT industry, and developmental institutions
           in contributing to sustainable inclusive growth of the country.</p>
       </div></a></div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services#consultations"><div class="panel panel-service">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a class="a-panel-service" href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#consultations"><div class="panel panel-service">
         <h2>
           +
           <small>Consultations</small>
@@ -242,7 +246,7 @@ photosCourses:
 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="panel panel-nomargins panel-events">
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#y4it"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image" style="background-image:url('{{ site.baseurl }}/images/photo_display-y4it.jpg');background-size:cover;">
                 <!--img-->
               </div></div>
@@ -254,7 +258,7 @@ photosCourses:
               </div></div>
             </div></div></a></div></div>
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#yrs"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image" style="background-image:url('{{ site.baseurl }}/images/photo_display-yrs.jpg');background-size:cover;">
                 <!--img-->
               </div></div>
@@ -267,7 +271,7 @@ photosCourses:
               </div></div>
             </div></div></a></div></div>
 
-            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events"><div class="panel panel-nomargins panel-events-unit"><div class="row">
+            <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#syncup"><div class="panel panel-nomargins panel-events-unit"><div class="row">
               <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0"><div class="panel panel-nomargins panel-events-unit-content panel-events-unit-content-image" style="background-image:url('{{ site.baseurl }}/images/photo_display-syncup.jpg');background-size:cover;">
                 <!--img-->
               </div></div>
@@ -304,8 +308,8 @@ photosCourses:
         services such as Education Development, Research &amp; Development,
         Software Engineering, and IT Project Management, among others.</p>
       <ul class="ul-home-about">
-        <li><a href="{{ site.baseurl }}/about">More Info</a></li>
-        <li><a href="{{ site.baseurl }}/about#contact" class="btn btn-default">Contact</a></li>
+        <!--li><a href="{{ site.baseurl }}/about">More Info</a></li-->
+        <li><a href="{{ site.baseurl }}/about{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#contact" class="btn btn-default">Contact</a></li>
       </ul>
     </div></div></div></div>
   </section>
