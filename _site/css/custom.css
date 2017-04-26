@@ -572,3 +572,8 @@ footer ul {
 footer ul li {
   padding-top: 7.5px;
 }
+
+footer ul li a {
+  display: block;
+  
+}

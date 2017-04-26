@@ -157,8 +157,8 @@ p {
 }
 
 .multicol .multicol-unit {
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid !important;
+  break-inside: avoid-column !important;
   padding-bottom: 20px;
 }
 
