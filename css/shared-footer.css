@@ -1,0 +1,119 @@
+/* FOOTER */
+
+/* FROM lean.css */
+
+footer {
+  background-color: #333;
+}
+
+footer ul {
+	list-style: none;
+  margin-bottom: 0;
+}
+
+.footer-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-main .multicol {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .multicol .multicol-unit {
+    padding-bottom: 0;
+  }
+}
+
+.footer-legal {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75em;
+  background-color: #555;
+}
+
+footer>div>div>div+div {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div+div {
+    text-align: center;
+  }  
+}
+
+@media (max-width: 992px) {
+  footer>div>div>div+div {
+    margin-top: 30px;
+  }  
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div:first-child {
+    margin-top: 15px;
+  }  
+  footer>div>div>div+div {
+    margin-top: 15px;
+  }  
+}
+
+@media (min-width: 768px) {
+  footer>div>div>div+div img {
+    float: right;
+    margin-right: 60px;
+    margin-left: 15px;
+  }  
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  footer>div>div>div+div img {
+    margin-right: 15px;
+  }  
+}
+
+@media (max-width: 768px) {
+  footer>div>div>div+div img {
+    margin-bottom: 15px;
+  }  
+}
+
+footer>div>div>div+div img {
+  width: 60px;
+}
+
+footer>div>div>div+div span {
+  display: block;
+  color: white;
+  font-size: 0.75em;
+}
+
+/* FROM custom.css */
+footer a,
+footer a:link,
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a:visited {
+  color: white;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: underline;
+}
+
+footer ul {
+  font-size: 0.75em;
+}
+
+footer ul li {
+  padding-top: 7.5px;
+}
+
+footer ul li a {
+  display: block;
+  
+}

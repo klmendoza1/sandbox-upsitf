@@ -548,32 +548,3 @@ body>section.section-body .btn.btn-default.btn-blue:focus {
   background-color: #152c41;
 }
 */
-
-/* FOOTER */
-footer a,
-footer a:link,
-footer a:hover,
-footer a:focus,
-footer a:active,
-footer a:visited {
-  color: white;
-}
-
-footer a:hover,
-footer a:focus,
-footer a:active {
-  text-decoration: underline;
-}
-
-footer ul {
-  font-size: 0.75em;
-}
-
-footer ul li {
-  padding-top: 7.5px;
-}
-
-footer ul li a {
-  display: block;
-  
-}
