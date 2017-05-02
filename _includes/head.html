@@ -23,7 +23,7 @@
   <!-- OPEN GRAPH METADATA -->
   <meta property="og:title" content="{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.baseurl }}" />
+  <meta property="og:url" content="{{ site.baseurl }}{% if page.title and page.title != "Home" %}{{ page.url }}{% endif %}" />
   <meta property="og:image" content="{{ site.baseurl }}/images/{% if page.title and page.title == "Courses" %}coll_social-og-cover-courses.png{% else %}coll_social-og-cover-home.png{% endif %}" />
   <meta property="og:image:url" content="{{ site.baseurl }}/images/{% if page.title and page.title == "Courses" %}coll_social-og-cover-courses.png{% else %}coll_social-og-cover-home.png{% endif %}" />
   <meta property="og:image:type" content="image/png" />
