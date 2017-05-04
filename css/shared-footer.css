@@ -52,7 +52,7 @@ footer>div>div>div+div {
 
 @media (max-width: 768px) {
   footer>div>div>div:first-child {
-    margin-top: 15px;
+    /*margin-top: 15px;*/
   }  
   footer>div>div>div+div {
     margin-top: 15px;

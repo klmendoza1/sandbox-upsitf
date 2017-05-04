@@ -9,26 +9,26 @@
         <div class="multicol-unit">
           <a href="{{ site.baseurl }}/courses">Courses</a>
           <ul>
-            <li><a href="{{ site.baseurl }}/courses#schedules">Schedules</a></li>
-            <li><a href="{{ site.baseurl }}/courses#offerings">Offerings</a></li>
-            <li><a href="{{ site.baseurl }}/courses#registration">Registration</a></li>
+            <li><a href="{{ site.baseurl }}/courses{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#schedules">Schedules</a></li>
+            <li><a href="{{ site.baseurl }}/courses{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#offerings">Offerings</a></li>
+            <li><a href="{{ site.baseurl }}/courses{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#registration">Registration</a></li>
           </ul>
         </div>
         <div class="multicol-unit">
           <a href="{{ site.baseurl }}/services">Services</a>
           <ul>
-            <li><a href="{{ site.baseurl }}/services#cct">Customized Training</a></li>
-            <li><a href="{{ site.baseurl }}/services#consultations">Consultations</a></li>
-            <li><a href="{{ site.baseurl }}/services#tbc4k">TBC4K</a></li>
-            <li><a href="{{ site.baseurl }}/services#ict4d">ICT4D</a></li>
+            <li><a href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#cct">Customized Training</a></li>
+            <li><a href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#consultations">Consultations</a></li>
+            <li><a href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#tbc4k">TBC4K</a></li>
+            <li><a href="{{ site.baseurl }}/services{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#ict4d">ICT4D</a></li>
           </ul>
         </div>
         <div class="multicol-unit">
           <a href="{{ site.baseurl }}/events">Events</a>
           <ul>
-            <li><a href="{{ site.baseurl }}/events#y4it">Y4iT</a></li>
-            <li><a href="{{ site.baseurl }}/events#yrs">YRS</a></li>
-            <li><a href="{{ site.baseurl }}/events#syncup">SYNC UP</a></li>
+            <li><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#y4it">Y4iT</a></li>
+            <li><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#yrs">YRS</a></li>
+            <li><a href="{{ site.baseurl }}/events{% if site.switchAnchorSlash == true %}{{ '/' }}{% endif %}#syncup">SYNC UP</a></li>
           </ul>
         </div>
         <!--div class="multicol-unit">
@@ -42,13 +42,13 @@
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"">
       <img src="{{ site.baseurl }}/images/logo_sitf-white-header.png">
-      <span>UP System Information Technology Foundation, Inc.</span>
+      <span>{{ site.titleFull }}</span>
       <span>3/F Vidal Tan Hall, Quirino Ave. cor. Velasquez St.,<br/> University of
         the Philippines Diliman, 1110 Quezon City</span>
-      <span>info@upsitf.org</span>
-      <span>Landline No. 788-5898/436-2217</span>
-      <span>Fax No. 920-2036</span>
-      <span>Mobile No. 0917-563-5682</span>
+      <span>{{ site.contactEmail }}</span>
+      <span>Landline No. {{ site.contactLandlineMain }} or {{ site.contactLandlineSub }}</span>
+      <span>Fax No. {{ site.contactFax }}</span>
+      <span>Mobile No. {{ site.contactMobile }}</span>
       <!--ul>
         <li><a href="{{ site.urlFacebook }}"></a></li>
         <li><a href="{{ site.urlTwitter }}"></a></li>

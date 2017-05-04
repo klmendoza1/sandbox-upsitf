@@ -2,10 +2,11 @@
 
 title: "UP System Information Technology Foundation"
 titleAlt: "UPSITF"
+titleFull: "UP System Information Technology Foundation, Inc."
 
 
-baseurl: http://toffmendoza.me/sandbox-upsitf
-#baseurl: http://upsitf.org/
+#baseurl: http://toffmendoza.me/sandbox-upsitf
+baseurl: http://upsitf.org
 
 # Build settings
 markdown: kramdown
@@ -17,8 +18,10 @@ headerDropdown: false
 switchBlog: false
 switchAnchorSlash: true
 
-urlRegForm: "http://bit.ly/upsitf-register"
-urlRegFormLegacy: "https://sitf.typeform.com/to/tXnMb4"
+fileSchedule: "UPSITFShortCourses20170504.pdf"
+
+urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
+urlRegFormMini: "http://bit.ly/upsitf-register"
 
 urlFacebook: "https://www.facebook.com/upsitf.org"
 urlTwitter: "https://twitter.com/upsitf"
@@ -40,7 +43,8 @@ contactAddress:
 contactHours:
  - "8am to 5pm"
 contactEmail: "info@upsitf.org"
-contactEmail: "marketing@upsitf.org"
-contactLandline: “(02) 436 2217”
-contactFax: “(02) 920 2036”
-contactMobile: “0917 563 5682”
+contactEmailMarketing: "marketing@upsitf.org"
+contactLandlineMain: (02) 788 5898
+contactLandlineSub: (02) 436 2217
+contactFax: (02) 920 2036
+contactMobile: 0917 563 5682
