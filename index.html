@@ -61,6 +61,13 @@ photosCourses:
  - "art_icon-db-full.png"
  - "art_icon-python-full.png"
  - "art_icon-phpmysql-full.png"
+
+dataCoursesUpdates:
+ - "Introduction to Programming Using Java I (Basic) - starts on June 4, 2017"
+ - "CCNA 1: Network Fundamentals - starts on May 21, 2017"
+ - "CCNA 2: Routing Protocols and Concepts - starts on June 4, 2017"
+ - "CCNA 4: Accessing the WAN - starts on May 20, 2017"
+ - "IT Security Analysis - starts on June 11, 2017"
 ---
 
 <section class="section-jumbotron"><div class="slick-jumbotron">
@@ -166,11 +173,14 @@ photosCourses:
               demands of time. These courses are modular, and the duration of
               each module may range from three days to two weeks, taken on a
               part-time basis.</p>
+            {% if page.dataCoursesUpdates %}
             <h3>Schedules: Updates</h3>
             <ul>
-              <li>CCNA 1: Network Fundamentals - starts on May 21, 2017</li>
-              <li>Introduction to Programming Using Java I (Basic) - starts on June 4, 2017</li>
+              {% for eachitem in page.dataCoursesUpdates %}
+              <li>{{ eachitem }}</li>
+              {% endfor %}
             </ul>
+            {% endif %}
 
             <a class="btn btn-default" href="{{ site.baseurl }}/courses" style="margin-right: 15px;">More Courses</a>
             <a class="btn btn-default btn-register" target="_blank" href="{{ site.urlRegForm }}">Register</a>
