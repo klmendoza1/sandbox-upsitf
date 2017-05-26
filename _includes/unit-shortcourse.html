@@ -19,7 +19,7 @@
       {% if eachitem.dateStart or eachitem.dateEnd %}
       {% if eachitem.dateStart %}{{ eachitem.dateStart }}{% else %}TBA{% endif %}
       {% if eachitem.dateEnd %}to {{ eachitem.dateEnd }}{% else %}TBA{% endif %}
-      {% if eachitem.status %}<span class="span-dates-status">{{ eachitem.status }}</span>{% endif %}
+      {% if eachitem.status %}<!--span class="span-dates-status">{{ eachitem.status }}</span-->{% endif %}
       {% else %}
       Dates TBA
       {% endif %}
