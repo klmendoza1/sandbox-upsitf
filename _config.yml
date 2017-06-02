@@ -5,8 +5,8 @@ titleAlt: "UPSITF"
 titleFull: "UP System Information Technology Foundation, Inc."
 
 
-baseurl: http://toffmendoza.me/sandbox-upsitf
-#baseurl: http://upsitf.org
+#baseurl: http://toffmendoza.me/sandbox-upsitf
+baseurl: http://upsitf.org
 
 # Build settings
 markdown: kramdown
@@ -18,7 +18,7 @@ headerDropdown: false
 switchBlog: false
 switchAnchorSlash: true
 
-fileSchedule: "UPSITFShortCourses20170526.pdf"
+fileSchedule: "UPSITFShortCourses20170602.pdf"
 
 urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
 urlRegFormMini: "http://bit.ly/upsitf-register"
