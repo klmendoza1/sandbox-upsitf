@@ -621,7 +621,7 @@ ul {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .panel.panel-service {
-    min-height: 218px;
+    min-height: 240px;
     
   }
 }
