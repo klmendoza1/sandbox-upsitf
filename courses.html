@@ -212,9 +212,8 @@ dataShortCoursesOthers:
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
    dateStart: "November 26"     #string format = [stringMonth] [intDay], [intYear]
    dateEnd: "December 10, 2017"      #string format = [stringMonth] [intDay], [intYear]
-   rateRegular: "16,000"         #double with commas and 2 decimal places
-   rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
-   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+   rateRegular: "15,000"         #double with commas and 2 decimal places
+   rateRegularAcadGov: "12,500"         #double with commas and 2 decimal places
  - id: "seo"          #string
    status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    rateRegular: "14,000"         #double with commas and 2 decimal places
@@ -448,8 +447,8 @@ dataCourseOfferings:
       file: "UPSITF TCP Syllabus - Advanced PHP and MySQL.pdf"
     - name: "Web Application Security"
       id: "websec"
-      icon: ""
-      file: ""
+      icon: "art_icon-itsec-full.png"
+      file: "UPSITF TCP Syllabus - Web Application IT Security.pdf"
     - name: "Search Engine Optimization (SEO)"
       id: "seo"
       icon: ""
@@ -727,6 +726,7 @@ dataRegistration: 1
               </td>
               <td>
                 {% if eachitem.rateRegular %}<span class="span-rate span-rate-regular"><span>Regular Rate</span> - &#x20B1; {{ eachitem.rateRegular }}</span>{% endif %}
+                {% if eachitem.rateRegularAcadGov %}<span class="span-rate span-rate-regular"><span>Academic/Government Rate</span> - &#x20B1; {{ eachitem.rateRegularAcadGov }}</span>{% endif %}
     {% if eachitem.rateEarly or eachitem.rateEarlyAcadGov or eachitem.rateEarlyIndusCorpo %}
     <span class="span-rate span-rate-earlybird">
       <span>Early Bird Rate</span>

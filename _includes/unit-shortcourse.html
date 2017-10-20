@@ -42,7 +42,14 @@
 
     
 
-    {% if eachitem.rateRegular %}<span class="span-rate span-rate-regular"><span>Regular Rate</span> - &#x20B1; {{ eachitem.rateRegular }}</span>{% endif %}
+    {% if eachitem.rateRegular %}
+    <span class="span-rate span-rate-regular"><span>Regular Rate</span> - &#x20B1; {{ eachitem.rateRegular }}</span>
+    {% endif %}
+
+    {% if eachitem.rateRegularAcadGov %}
+    <span class="span-rate span-rate-regular"><span>Academic/Government Rate</span> - &#x20B1; {{ eachitem.rateRegularAcadGov }}</span>
+    {% endif %}
+
     {% if eachitem.rateEarly or eachitem.rateEarlyAcadGov or eachitem.rateEarlyIndusCorpo %}
     <span class="span-rate span-rate-earlybird">
       <span>Early Bird Rate</span>
