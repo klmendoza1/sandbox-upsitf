@@ -1,0 +1,12 @@
+{% if page.layout == "courses" %}{% if page.courseId %}{% if site.dataCourseOfferings %}
+
+{% for eachcategory in site.dataCourseOfferings %}{% for eachitemincategory in eachcategory.list %}
+
+{% if page.courseId == eachitemincategory.id %}
+{% assign dataCourse = eachitemincategory %}
+{% break %}
+{% endif %}
+
+{% endfor %}{% endfor %}
+
+{% endif %}{% endif %}{% endif %}

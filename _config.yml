@@ -18,7 +18,8 @@ headerDropdown: false
 switchBlog: false
 switchAnchorSlash: true
 
-fileSchedule: "UPSITFShortCourses20171208.pdf"
+fileSchedule: "UPSITFShortCourses20171201.pdf"
+dataLastUpdated: "2017/12/08 11:45 PM"
 
 urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
 urlRegFormMini: "http://bit.ly/upsitf-register"
@@ -48,3 +49,577 @@ contactLandlineMain: (02) 788 5898
 contactLandlineSub: (02) 436 2217
 contactFax: (02) 920 2036
 contactMobile: 0917 563 5682
+
+
+
+
+dataShortCoursesSAMPLE:
+ - id: "abcdef"
+   categoryId: "ghijkl"   #string
+   days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 23, 2017"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 3, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
+
+
+
+dataShortCourses:
+ - id: "cprog"   #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 11, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "cppprog"        #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 10"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 10, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "csharpprog"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   rateRegular: "16,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+ - id: "java1"          #string
+   status: "pending"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 27"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "java2"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 3"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 3, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,200" #double with commas and 2 decimal places
+ - id: "python"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 27"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "android"
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 4, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
+ - id: "ios"             #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "18,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
+ - id: "sengg"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "18,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
+ - id: "stesting"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 27"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "18,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
+ - id: "sqa"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 4"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 4, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "18,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
+ - id: "aspnet"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 4"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 4, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "webdev"          #string
+   status: "pending"             # "pending"/"confirmed"/"ongoing"/"postponed"/"cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "phpmysqlfund"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 28"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "16,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,000"      #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+ - id: "phpmysqladv"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 20"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 17, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "16,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+ - id: "dbs"
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 27"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 24, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "oraclesql"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "May 5"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "June 2, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "16,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+ - id: "ccna1"          #string
+   status: "confirmed"
+   days: "Ten (10)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 14"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "24,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
+ - id: "ccna2"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Ten (10)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 15, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "24,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
+ - id: "ccna3"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Ten (10)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   rateRegular: "24,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
+ - id: "ccna4"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Ten (10)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   rateRegular: "24,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
+ - id: "linux101"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 28"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 25, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "17,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
+ - id: "linux102"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 18, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "17,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
+ - id: "itsec"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 18, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "pentest"                     #string
+   status: "techies"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 11, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "15,000"         #double with commas and 2 decimal places
+   rateRegularAcadGov: "12,500"         #double with commas and 2 decimal places
+ - id: "itpm"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 27"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 24, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "24,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
+ - id: "sad"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 28"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "18,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
+ - id: "smtrading"
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Two (2)"                 #string format = [stringNumber] ([intNumber])
+   dateStart: "February 17"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   rateRegular: "7,500"         #double with commas and 2 decimal places
+ - id: "tbc4k-scratch"
+   status: "techies"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   dateStart: "February 17"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "March 17, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   timeStart: "10 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "3 PM"                  #string format = [intTime] [AM/PM]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+
+dataShortCoursesLegacy:
+ - id: "vbnet"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Saturday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "December 9, 2017"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "January 20, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "javaee"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "December 10, 2017"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "January 21, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "16,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
+ - id: "seo"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   rateRegular: "14,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
+ - id: "oracleplsql"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "January 28"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "February 25, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "20,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "10,000"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "14,000" #double with commas and 2 decimal places
+ - id: "linux201"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   rateRegular: "17,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
+ - id: "linux202"          #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   rateRegular: "17,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
+
+switchShortCoursesCategorize: true
+dataCourseOfferings:
+ - name: "Programming"
+   id: "programming"
+   list:
+    - name: "C Programming"
+      id: "cprog"
+      icon: ""
+      file: "UPSITF TCP Syllabus - C Programming.pdf"
+      description: "This course is a lecture and laboratory course that gives students theoretical background on designing programs (internal design process, function decomposition, logical and physical data organization, creating reusable parts, etc.) and allows them to practice proper program design by creating programs in C, based on given specifications."
+    - name: "C++ Programming"
+      id: "cppprog"
+      icon: ""
+      file: ""
+      description: ""
+    - name: "Introduction to Visual Basic .NET"
+      id: "vbnet"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to Visual Basic .NET.pdf"
+      description: "This course introduces Visual Basic .NET and explains how it fits into the .NET platform. It explains how to use the programming tools in Microsoft Visual Studio .NET and provides enough practice so that students can create their first application in Visual Basic .NET."
+    - name: "Introduction to C# Programming Using MS.NET"
+      id: "csharpprog"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to C Sharp Programming Using MS.NET.pdf"
+      description: "This course presents the concepts that are central to the Microsoft .NET Framework and platform, and the Microsoft Visual Studio .NET integrated development environment (IDE); describes how to work in the development environment; and explains how to use Visual Studio .NET to create and build applications based on Microsoft .NET."
+    - name: "Introduction to Programming Using Java I (Basic)"
+      id: "java1"
+      icon: "art_icon-java-full.png"
+      file: "UPSITF TCP Syllabus - Java 1.pdf"
+      description: ""
+    - name: "Introduction to Programming Using Java II (Intermediate)"
+      id: "java2"
+      icon: "art_icon-java-full.png"
+      file: "UPSITF TCP Syllabus - Java 2.pdf"
+      description: ""
+    - name: "Java EE"
+      id: "javaee"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Java EE.pdf"
+      description: ""
+    - name: "Python (Integrated with Django Web Framework)"
+      id: "python"
+      icon: "art_icon-python-full.png"
+      file: "UPSITF TCP Syllabus - Python.pdf"
+      description: "This course aims to teach basic and advanced programming using Python. It will include basic game development and web development. Django is also included as part of a more advanced web development using Python."
+ - name: "Software Development and Applications"
+   id: "sda"
+   list:
+    - name: "Introduction to Android Applications"
+      id: "android"
+      icon: "art_icon-android-full.png"
+      file: "UPSITF TCP Syllabus - Introduction to Android Applications.pdf"
+    - name: "iOS Application Development"
+      id: "ios"
+      icon: ""
+      file: "UPSITF TCP Syllabus - iOS Application Development.pdf"
+    - name: "Software Engineering"
+      id: "sengg"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Engineering.pdf"
+    - name: "Software Testing"
+      id: "stesting"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Testing.pdf"
+    - name: "Software Quality Assurance (SQA)"
+      id: "sqa"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Software Quality Assurance.pdf"
+ - name: "Web Technology"
+   id: "webtech"
+   list:
+    - name: "Introduction to ASP.NET Programming"
+      id: "aspnet"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to ASP.NET Programming.pdf"
+    - name: "Web Development Using HTML and CSS"
+      id: "webdev"
+      file: ""
+      icon: "art_icon-webdev-full.png"
+    - name: "PHP and MySQL Fundamentals"
+      id: "phpmysqlfund"
+      icon: "art_icon-phpmysql-full.png"
+      file: "UPSITF TCP Syllabus - PHP and MySQL Fundamentals.pdf"
+    - name: "Advanced PHP and MySQL"
+      id: "phpmysqladv"
+      icon: "art_icon-phpmysql-full.png"
+      file: "UPSITF TCP Syllabus - Advanced PHP and MySQL.pdf"
+    - name: "Search Engine Optimization (SEO)"
+      id: "seo"
+      icon: ""
+      file: ""
+ - name: "Database Technology"
+   id: "dbtech"
+   list:
+    - name: "Introduction to Database Systems"
+      id: "dbs"
+      icon: "art_icon-db-full.png"
+      file: "UPSITF TCP Syllabus - Introduction to Database Systems.pdf"
+    - name: "Fundamentals of Oracle SQL"
+      id: "oraclesql"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Fundamentals of Oracle SQL.pdf"
+    - name: "Introduction to Oracle PL/SQL"
+      id: "oracleplsql"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Introduction to Oracle PL SQL.pdf"
+ - name: "Network Technology"
+   id: "networktech"
+   list:
+    - name: "CCNA 1: Network Fundamentals"
+      id: "ccna1"
+      icon: "art_icon-ccna-full.png"
+      file: "UPSITF TCP Syllabus - CCNA 1.pdf"
+    - name: "CCNA 2: Routing Protocols and Concepts"
+      id: "ccna2"
+      icon: "art_icon-ccna-full.png"
+      file: "UPSITF TCP Syllabus - CCNA 2.pdf"
+    - name: "CCNA 3: LAN Switching and Wireless"
+      id: "ccna3"
+      icon: "art_icon-ccna-full.png"
+      file: "UPSITF TCP Syllabus - CCNA 3.pdf"
+    - name: "CCNA 4: Accessing the WAN"
+      id: "ccna4"
+      icon: "art_icon-ccna-full.png"
+      file: "UPSITF TCP Syllabus - CCNA 4.pdf"
+    - name: "Linux System Administration 101"
+      id: "linux101"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 101.pdf"
+    - name: "Linux System Administration 102"
+      id: "linux102"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 102.pdf"
+    - name: "Linux System Administration 201"
+      id: "linux201"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 201.pdf"
+    - name: "Linux System Administration 202"
+      id: "linux202"
+      icon: ""
+      file: "UPSITF TCP Syllabus - Linux System Administration 202.pdf"
+    - name: "IT Security Analysis"
+      id: "itsec"
+      icon: "art_icon-itsec-full.png"
+      file: "UPSITF TCP Syllabus - IT Security Analysis.pdf"
+    - name: "Penetration Testing"
+      id: "pentest"
+      icon: "art_icon-itsec-full.png"
+      file: "UPSITF TCP Syllabus - Penetration Testing.pdf"
+ - name: "Business Processes"
+   id: "busproc"
+   list:
+    - name: "IT Project Management"
+      id: "itpm"
+      icon: ""
+      file: "UPSITF TCP Syllabus - IT Project Management.pdf"
+ - name: "Systems Analysis and Design"
+   id: "sad"
+   list:
+    - name: "Systems Analysis and Design (SAD)"
+      id: "sad"
+      icon: ""
+      file: "UPSITF TCP Syllabus - System Analysis and Design.pdf"
+ - name: "Special Courses"
+   id: "special"
+   list:
+    - name: "Stock Market Trading Course: Technical Analysis"
+      id: "smtrading"
+      icon: ""
+      file: ""
+    - name: "TBC4K: Scratch Programming for Kids"
+      id: "tbc4k-scratch"
+      icon: ""
+      file: ""
+
+dataCourseOfferingsLegacy:
+ - name: "Programming"
+   id: "programming"
+   list:
+    - name: "Mobile Applications Using Java ME"
+      id: "javame"
+      file: ""
+ - name: "Database Technology"
+   id: "dbtech"
+   list:
+    - name: "MS Access 2007"
+      id: "msaccess"
+      file: ""
+ - name: "Business Processes"
+   id: "businessprocesses"
+   list:
+    - name: "Computer Literacy"
+      id: "complit"
+      file: ""
+    - name: "Educational Technology 101"
+      id: "edtech"
+      file: ""

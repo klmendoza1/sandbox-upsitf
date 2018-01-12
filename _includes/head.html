@@ -1,3 +1,5 @@
+{% include get-course.html %}
+
 <head>
   
   <meta charset="utf-8">
@@ -6,7 +8,7 @@
 
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <!-- BASIC METADATA -->
-  <title>{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.layout == "courses" %}{{ dataCourse.name }} | Courses at {% else %}{% if page.title and page.title == "Home" %}{% else %}{{ page.title }} | {% endif %}{% endif %}{{ site.title }}</title>
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/icons/apple-touch-icon.png?v=9BakOkeGe0">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/icons/favicon-32x32.png?v=9BakOkeGe0" sizes="32x32">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/icons/favicon-16x16.png?v=9BakOkeGe0" sizes="16x16">
@@ -21,9 +23,9 @@
   <meta name="theme-color" content="#601418">
 
   <!-- OPEN GRAPH METADATA -->
-  <meta property="og:title" content="{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:title" content="{% if page.layout == courses %}{{ dataCourse.name }} | Courses at {% else %}{% if page.title and page.title == "Home" %}{% else %}{{ page.title }} | {% endif %}{% endif %}{{ site.title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.baseurl }}{% if page.title and page.title != "Home" %}{{ page.url }}{% endif %}" />
+  <meta property="og:url" content="{{ site.baseurl }}{% if page.title and page.title == "Home" %}{% else %}{{ page.url }}{% endif %}" />
   <meta property="og:image" content="{{ site.baseurl }}/images/{% if page.title and page.title == "Courses" %}coll_social-og-cover-courses.png{% else %}coll_social-og-cover-home.png{% endif %}" />
   <meta property="og:image:url" content="{{ site.baseurl }}/images/{% if page.title and page.title == "Courses" %}coll_social-og-cover-courses.png{% else %}coll_social-og-cover-home.png{% endif %}" />
   <meta property="og:image:type" content="image/png" />
