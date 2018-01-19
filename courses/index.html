@@ -166,7 +166,7 @@ dataRegistration: 1
                 {% if eachitem.days or eachitem.day or eachitem.timeStart or eachitem.timeEnd %}
                   <span class="span-dates-details">
                     {% if eachitem.days %}{{ eachitem.days }} day/s {% endif %}
-                    {% if eachitem.day %}{% if eachitem.days %}- e{% else %}E{% endif %}very {{ eachitem.day }}{% endif %}
+                    {% if eachitem.day %}{% if eachitem.recurrence == true %}{% if eachitem.days %}- e{% else %}E{% endif %}very {% endif %}{{ eachitem.day }}{% endif %}
                     {% if eachitem.timeStart or eachitem.timeEnd %}
                     {% if eachitem.days or eachitem.day %}<br class="hidden-xs"/><span class="visible-xs visible-xs-inline"> | </span>{% endif %}
                     {% if eachitem.timeStart %}{{ eachitem.timeStart }}{% else %}TBA{% endif %}
@@ -192,7 +192,7 @@ dataRegistration: 1
     </span>
     {% endif %}
               </td>
-              <td><a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register">Register</a></td>
+              <td><a href="{% if eachitem.id contains "tbc4k" %}{{ site.urlTBC4K }}{% else %}{{ site.urlRegForm }}{% endif %}" target="_blank" class="btn btn-default btn-register">{% if eachitem.id contains "tbc4k" %}TBC4K{% else %}Register{% endif %}</a></td>
             </tr>
 
             {% break %}

@@ -1,15 +1,15 @@
 {% assign found = false %}
-{% for eachcategory in page.dataCourseOfferings %}{% for eachitemincategory in eachcategory.list %}{% if eachitemincategory.id == eachitem.id %}
+{% for eachcategory in site.dataCourseOfferings %}{% for eachitemincategory in eachcategory.list %}{% if eachitemincategory.id == eachitem.id %}
 
 <div class="div-trainings-main-unit multicol-unit">
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-image text-center">
-    {% if page.switchFillers == true %}
+    {% if site.switchFillers == true %}
     <div class="filler"></div>
     {% else %}
     <img src="{{ site.baseurl }}/images/icons/min/{% if eachitemincategory.icon == "" %}art_icon-filler-full.png{% else %}{{ eachitemincategory.icon }}{% endif %}">
     {% endif %}
     {% if eachitemincategory.file and eachitemincategory.file != "" %}<a href="{{ site.baseurl }}/files/syllabus/{{ eachcategory.id }}/{{ eachitemincategory.file }}" target="_blank">View Syllabus</a>{% endif %}
-    <a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register">Register</a>
+    <a href="{% if eachitem.id contains "tbc4k" %}{{ site.urlTBC4K }}{% else %}{{ site.urlRegForm }}{% endif %}" target="_blank" class="btn btn-default btn-register">{% if eachitem.id contains "tbc4k" %}TBC4K{% else %}Register{% endif %}</a>
   </div>
   <div class="div-trainings-main-unit-content div-trainings-main-unit-content-text">
 
@@ -27,7 +27,7 @@
       {% if eachitem.days or eachitem.day or eachitem.timeStart or eachitem.timeEnd %}
       <span class="span-dates-details">
         {% if eachitem.days %}{{ eachitem.days }} day/s {% endif %}
-        {% if eachitem.day %}{% if eachitem.days %}- e{% else %}E{% endif %}very {{ eachitem.day }}{% endif %}
+        {% if eachitem.day %}{% if eachitem.recurrence == true %}{% if eachitem.days %}- e{% else %}E{% endif %}very {% endif %}{{ eachitem.day }}{% endif %}
         {% if eachitem.timeStart or eachitem.timeEnd %}
         {% if eachitem.days or eachitem.day %}|{% endif %}
         {% if eachitem.timeStart %}{{ eachitem.timeStart }}{% else %}TBA{% endif %}
