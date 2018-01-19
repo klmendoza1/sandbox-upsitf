@@ -131,7 +131,7 @@ dataShortCourses:
  - id: "python"          #string
    status: "confirmed"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
-   day: "Sunday"                  #string
+   day: "Saturday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
@@ -251,7 +251,7 @@ dataShortCourses:
  - id: "dbs"
    status: "confirmed"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
-   day: "Sunday"                  #string
+   day: "Saturday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
@@ -535,7 +535,7 @@ dataCourseOfferings:
       file: "UPSITF TCP Syllabus - Introduction to ASP.NET Programming.pdf"
     - name: "Web Development Using HTML and CSS"
       id: "webdev"
-      file: ""
+      file: "UPSITF TCP Syllabus - Web Development Using HTML and CSS.pdf"
       icon: "art_icon-webdev-full.png"
     - name: "PHP and MySQL Fundamentals"
       id: "phpmysqlfund"
