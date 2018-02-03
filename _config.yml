@@ -5,8 +5,8 @@ titleAlt: "UPSITF"
 titleFull: "UP System Information Technology Foundation, Inc."
 
 
-#baseurl: http://toffmendoza.me/sandbox-upsitf
-baseurl: https://upsitf.org
+baseurl: http://toffmendoza.me/sandbox-upsitf
+#baseurl: https://upsitf.org
 
 # Build settings
 markdown: kramdown
