@@ -5,8 +5,8 @@ titleAlt: "UPSITF"
 titleFull: "UP System Information Technology Foundation, Inc."
 
 
-#baseurl: http://toffmendoza.me/sandbox-upsitf
-baseurl: https://upsitf.org
+baseurl: http://toffmendoza.me/sandbox-upsitf
+#baseurl: https://upsitf.org
 
 # Build settings
 markdown: kramdown
@@ -18,8 +18,8 @@ headerDropdown: false
 switchBlog: false
 switchAnchorSlash: true
 
-fileSchedule: "UPSITFShortCourses20180212.pdf"
-dataLastUpdated: "2018/02/12 3:45 PM"
+fileSchedule: "UPSITFShortCourses20180216.pdf"
+dataLastUpdated: "2018/02/16 9:45 AM"
 
 urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
 urlRegFormMini: "http://bit.ly/upsitf-register"
@@ -113,6 +113,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 7"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 5, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
@@ -171,8 +173,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 18"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 8, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "18,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
@@ -201,19 +203,17 @@ dataShortCourses:
    rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
  - id: "aspnet"          #string
-   status: "confirmed"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 11"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 11, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
  - id: "webdev"          #string
-   status: "pending"             # "pending"/"confirmed"/"ongoing"/"postponed"/"cancelled"
+   status: "confirmed"             # "pending"/"confirmed"/"ongoing"/"postponed"/"cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    recurrence: true
@@ -337,8 +337,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 18"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 8, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
@@ -372,8 +372,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 17"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 17, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 3"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "31, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "24,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
@@ -394,8 +394,8 @@ dataShortCourses:
    days: "Two (2)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    recurrence: true
-   dateStart: "February 17"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 10"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "17, 2018"      #string format = [stringMonth] [intDay], [intYear]
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
    rateRegular: "7,500"         #double with commas and 2 decimal places
@@ -404,8 +404,8 @@ dataShortCourses:
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Saturday"                  #string
    recurrence: true
-   dateStart: "February 17"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 17, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 3"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "31, 2018"      #string format = [stringMonth] [intDay], [intYear]
    timeStart: "10 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "3 PM"                  #string format = [intTime] [AM/PM]
    rateRegular: "8,000"         #double with commas and 2 decimal places
